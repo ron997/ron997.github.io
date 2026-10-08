@@ -30,12 +30,13 @@ export const summaryShort =
   "Data Scientist and ML engineer with a Master's in Computer Science, specializing in computer vision, NLP, and LLM / agentic systems."
 
 export const summary =
-  "Data Scientist and ML engineer with a Master's in Computer Science, specializing in computer vision, NLP, and LLM / agentic systems. Skilled across the full ML lifecycle, from YOLO-based detection and OCR document intelligence to LangGraph-orchestrated multi-agent workflows, and in shipping them with MongoDB, AWS, and Docker, consistently delivering models exceeding 90% accuracy."
+  "Data Scientist and ML engineer with a Master's in Computer Science, specializing in computer vision, NLP, and LLM / agentic systems. Skilled across the full ML lifecycle, from YOLO-based detection and OCR document intelligence to multi-agent workflows built with LangGraph and A2A, and in shipping them with Docker, Kubernetes, and AWS, consistently delivering models exceeding 90% accuracy."
 
 /** Phrases in the summary that get the highlighter as they are read. */
 export const summaryMarks = ['computer vision, NLP, and LLM / agentic systems.', 'shipping them', '90% accuracy.']
 
-export const topSkills = ['YOLOv8', 'DeepSORT', 'LangGraph', 'RAG', 'Docling', 'Mistral OCR', 'PyTorch', 'MongoDB', 'AWS', 'Docker']
+/** The hero's skill chips: one or two per area, kept to two rows. The full list is in `skills`. */
+export const topSkills = ['LangGraph', 'A2A', 'RAG', 'YOLOv8', 'Docling', 'PyTorch', 'PostgreSQL', 'MongoDB', 'Elasticsearch', 'Kubernetes']
 
 export const skills: { key: string; values: string[] }[] = [
   { key: 'Programming', values: ['Python', 'JavaScript', 'SQL', 'HTML', 'CSS'] },
@@ -45,10 +46,10 @@ export const skills: { key: string; values: string[] }[] = [
   },
   {
     key: 'LLM & GenAI',
-    values: ['LangGraph', 'multi-agent orchestration', 'RAG', 'embeddings', 'LLM agents', 'Whisper API', 'IndicParler TTS', 'BERT', 'Gensim', 'Mistral OCR', 'Docling', 'TwelveLabs', 'NLP'],
+    values: ['LangGraph', 'A2A', 'multi-agent orchestration', 'RAG', 'embeddings', 'LLM agents', 'Whisper API', 'IndicParler TTS', 'BERT', 'Gensim', 'Mistral OCR', 'Docling', 'TwelveLabs', 'NLP'],
   },
-  { key: 'Data & Databases', values: ['MongoDB', 'SQL', 'Pandas', 'NumPy'] },
-  { key: 'Web & Cloud', values: ['React', 'MUI', 'Flask API', 'Firebase', 'Postman', 'AWS', 'Docker'] },
+  { key: 'Data & Databases', values: ['PostgreSQL', 'MongoDB', 'Elasticsearch', 'SQL', 'Pandas', 'NumPy'] },
+  { key: 'Web & Cloud', values: ['React', 'MUI', 'Flask API', 'Firebase', 'Postman', 'AWS', 'Docker', 'Kubernetes'] },
 ]
 
 export const experience: Org[] = [
@@ -65,6 +66,9 @@ export const experience: Org[] = [
             text: 'Architected a multi-agent saree-design tagging pipeline orchestrated with LangGraph, coordinating 5+ vision and LLM tools to extract visual features, auto-generate structured tags and embeddings, and persist design metadata to a MongoDB collection, cataloging 5,000+ saree designs and cutting manual tagging effort by 70%.',
             metrics: ['5,000+ saree designs', 'cutting manual tagging effort by 70%'],
             tools: ['LangGraph'],
+          },
+          {
+            text: 'Built the orchestrator to also generate new saree designs, answer sales-data queries, generate visualizations, run trend research with illustrated PPT and PDF reports as output, and pick out and display designs from the internal catalogue, linked to sales data through the design ID.',
           },
           {
             text: 'Built a document-intelligence pipeline with Docling, applying OCR and vision models to make PDFs and scanned PDFs LLM-ready with over 95% extraction accuracy.',

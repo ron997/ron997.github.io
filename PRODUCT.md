@@ -34,7 +34,7 @@ He turns unstructured visual material (live video, scanned PDFs, photographs, fa
 structured, queryable data using computer vision, OCR, and LLM agents, and he ships those systems end to end
 because he started as a full-stack developer (Curved Pixel, 2020–22) before his MS in Computer Science.
 Range across CV (YOLOv8, DeepSORT, pose), document intelligence (Docling, Mistral OCR), and agentic LLM
-orchestration (LangGraph) is the differentiator, backed by measured accuracy figures.
+orchestration (LangGraph, A2A) is the differentiator, backed by measured accuracy figures.
 
 ## Operating Context
 
@@ -67,6 +67,14 @@ orchestration (LangGraph) is the differentiator, backed by measured accuracy fig
   accuracy, >90% corrosion detection, >91% litter/spillage detection, 95% record dedup accuracy, >98% OCR
   accuracy, +25% content accessibility, +15% labelling accuracy, −15% data interval times, +20% site response.
 - `WhatsApp Image 2026-10-08 at 6.24.21 PM.jpeg`: graduation portrait, UMass Boston commencement.
+- **Confirmed by Rounak on 2026-10-08, not yet in the resume PDF** (the site states these; the PDF, the parsed
+  hero page and its layout data still show the older text until the PDF is updated and `npm run assets` is rerun):
+  - Shipping is Docker, Kubernetes and AWS. MongoDB is a database, not part of shipping.
+  - Databases: PostgreSQL, MongoDB and Elasticsearch.
+  - LangGraph and A2A are core skills.
+  - The TCG multi-agent orchestrator also generates new saree designs, answers sales-data queries, generates
+    visualizations, runs trend research with illustrated PPT and PDF reports as output, and picks out and
+    displays designs from the internal catalogue, linked to sales data through the design ID.
 - **Absent, never fabricate:** testimonials, client logos, public demos or repo links for the projects,
   screenshots of client work, employer endorsements, availability dates, rates.
 

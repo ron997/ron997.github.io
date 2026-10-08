@@ -17,7 +17,7 @@ const TAGS: [string, RegExp][] = [
   ['video', /\b(video|footage|twelvelabs)/i],
   ['speech', /\b(whisper|tts|commentary)/i],
   ['nlp', /\b(bert|gensim|embedding|summarization|topic)/i],
-  ['data', /\b(sql|mongodb|records|database|deduplicate)/i],
+  ['data', /\b(sql|mongodb|records|database|deduplicate|sales)/i],
   ['web', /\b(web|react|flask|apis|javascript|pyqt5|desktop app)/i],
 ]
 const tagsFor = (role: Role) => TAGS.filter(([, re]) => role.bullets.some((b) => re.test(b.text))).map(([t]) => t)
