@@ -68,7 +68,7 @@ export const experience: Org[] = [
             tools: ['LangGraph'],
           },
           {
-            text: 'Built the orchestrator to also generate new saree designs, answer sales-data queries, generate visualizations, run trend research with illustrated PPT and PDF reports as output, and pick out and display designs from the internal catalogue, linked to sales data through the design ID.',
+            text: 'Built the orchestrator to also generate new saree designs, answer sales-data queries, generate visualizations, run trend research with illustrated PPT and PDF outputs, and pick out and display catalogue designs linked to sales data via design ID.',
           },
           {
             text: 'Built a document-intelligence pipeline with Docling, applying OCR and vision models to make PDFs and scanned PDFs LLM-ready with over 95% extraction accuracy.',

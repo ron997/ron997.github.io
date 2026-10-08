@@ -38,3 +38,7 @@ __pycache__/
 # Decision-round previews and comps (design working files, not published)
 .impeccable/mocks/
 .impeccable/hook.cache.json
+
+# Resume source (contains the phone number); the built PDF ships from public/
+/resume/
+/Rounak Burman - Resume*.pdf

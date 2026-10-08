@@ -1,4 +1,4 @@
 {
-  "prompt": "Origin: page 1 of the user's 'Rounak Burman - Resume.pdf' rendered at 3x with PyMuPDF, phone number covered with an ink rectangle, resized to 1224px wide by scripts/prepare_assets.py. Not generated.",
-  "createdAt": "2026-10-08T14:01:50.028Z"
+  "prompt": "Origin: page 1 of 'Rounak Burman - Resume.pdf' (built from resume/resume.html by scripts/build_resume.mjs) rendered at 3x with PyMuPDF, phone number covered with an ink rectangle, resized to 1224px wide by scripts/prepare_assets.py. Not generated.",
+  "createdAt": "2026-10-08T15:11:20.616Z"
 }

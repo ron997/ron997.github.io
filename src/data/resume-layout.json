@@ -10,10 +10,10 @@
    "order": 1,
    "cls": "title",
    "bbox": [
-    0.3781,
-    0.0367,
-    0.6216,
-    0.0607
+    0.3784,
+    0.0274,
+    0.6249,
+    0.0566
    ],
    "text": "ROUNAK BURMAN"
   },
@@ -21,10 +21,10 @@
    "order": 2,
    "cls": "contact",
    "bbox": [
-    0.1387,
-    0.0648,
-    0.8612,
-    0.0762
+    0.1419,
+    0.0555,
+    0.8617,
+    0.0693
    ],
    "text": "[phone redacted] | rounak42.rb@gmail.com | Kolkata, India | linkedin.com/in/rounak-burman | github.com/ron997"
   },
@@ -33,9 +33,9 @@
    "cls": "section-header",
    "bbox": [
     0.0588,
-    0.0852,
-    0.2491,
-    0.0985
+    0.0735,
+    0.2494,
+    0.0898
    ],
    "text": "PROFESSIONAL SUMMARY"
   },
@@ -44,20 +44,20 @@
    "cls": "text",
    "bbox": [
     0.0588,
-    0.1073,
-    0.9227,
-    0.1486
+    0.0956,
+    0.9424,
+    0.1396
    ],
-   "text": "Data Scientist and ML engineer with a Master's in Computer Science, specializing in computer vision, NLP, and LLM / agentic systems. Skilled across the full ML lifecycle — from YOLO-based detection and OCR document intelligence to LangGraph-orchestrated multi-agent workflows — and in shipping them with MongoDB, AWS, and Docker, consistently delivering models exceeding 90% accuracy."
+   "text": "Data Scientist and ML engineer with a Master's in Computer Science, specializing in computer vision, NLP, and LLM / agentic systems. Skilled across the full ML lifecycle — from YOLO-based detection and OCR document intelligence to multi-agent workflows built with LangGraph and A2A — and in shipping them with Docker, Kubernetes, and AWS, consistently delivering models exceeding 90% accuracy."
   },
   {
    "order": 5,
    "cls": "section-header",
    "bbox": [
     0.0588,
-    0.1576,
-    0.1869,
-    0.1709
+    0.1436,
+    0.1872,
+    0.1598
    ],
    "text": "TECHNICAL SKILLS"
   },
@@ -66,9 +66,9 @@
    "cls": "key-value",
    "bbox": [
     0.0588,
-    0.1797,
-    0.382,
-    0.1917
+    0.1657,
+    0.3772,
+    0.1803
    ],
    "text": "Programming: Python, JavaScript, SQL, HTML, CSS"
   },
@@ -77,9 +77,9 @@
    "cls": "key-value",
    "bbox": [
     0.0588,
-    0.1956,
-    0.9239,
-    0.2076
+    0.1818,
+    0.9065,
+    0.1964
    ],
    "text": "ML & Computer Vision: PyTorch, TensorFlow, Scikit-Learn, OpenCV, YOLOv8, DeepSORT, Roboflow, pose estimation, keypoint detection"
   },
@@ -88,42 +88,42 @@
    "cls": "key-value",
    "bbox": [
     0.0588,
-    0.2115,
-    0.9262,
-    0.2382
+    0.1979,
+    0.9027,
+    0.2267
    ],
-   "text": "LLM & GenAI: LangGraph, multi-agent orchestration, RAG, embeddings, LLM agents, Whisper API, IndicParler TTS, BERT, Gensim, Mistral OCR, Docling, TwelveLabs, NLP"
+   "text": "LLM & GenAI: LangGraph, A2A, multi-agent orchestration, RAG, embeddings, LLM agents, Whisper API, IndicParler TTS, BERT, Gensim, Mistral OCR, Docling, TwelveLabs, NLP"
   },
   {
    "order": 9,
    "cls": "key-value",
    "bbox": [
     0.0588,
-    0.2421,
-    0.3891,
-    0.2541
+    0.2282,
+    0.5507,
+    0.2428
    ],
-   "text": "Data & Databases: MongoDB, SQL, Pandas, NumPy"
+   "text": "Data & Databases: PostgreSQL, MongoDB, Elasticsearch, SQL, Pandas, NumPy"
   },
   {
    "order": 10,
    "cls": "key-value",
    "bbox": [
     0.0588,
-    0.258,
-    0.5046,
-    0.27
+    0.2433,
+    0.5753,
+    0.2579
    ],
-   "text": "Web & Cloud: React, MUI, Flask API, Firebase, Postman, AWS, Docker"
+   "text": "Web & Cloud: React, MUI, Flask API, Firebase, Postman, AWS, Docker, Kubernetes"
   },
   {
    "order": 11,
    "cls": "section-header",
    "bbox": [
     0.0588,
-    0.2791,
-    0.1956,
-    0.2924
+    0.2619,
+    0.1961,
+    0.2782
    ],
    "text": "WORK EXPERIENCE"
   },
@@ -132,9 +132,9 @@
    "cls": "org",
    "bbox": [
     0.0588,
-    0.3025,
-    0.1373,
-    0.3158
+    0.2837,
+    0.137,
+    0.3
    ],
    "text": "TCG Digital"
   },
@@ -142,10 +142,10 @@
    "order": 13,
    "cls": "meta",
    "bbox": [
-    0.8547,
-    0.3035,
-    0.9414,
-    0.3155
+    0.8594,
+    0.285,
+    0.9448,
+    0.2996
    ],
    "text": "Kolkata, India"
   },
@@ -154,9 +154,9 @@
    "cls": "role",
    "bbox": [
     0.0588,
-    0.3187,
-    0.2143,
-    0.3306
+    0.3011,
+    0.2134,
+    0.3157
    ],
    "text": "Data Science Consultant"
   },
@@ -164,10 +164,10 @@
    "order": 15,
    "cls": "meta",
    "bbox": [
-    0.8278,
-    0.3187,
-    0.9414,
-    0.3306
+    0.8316,
+    0.3011,
+    0.9448,
+    0.3157
    ],
    "text": "Jul 2025 – Present"
   },
@@ -176,9 +176,9 @@
    "cls": "list-item",
    "bbox": [
     0.0588,
-    0.3344,
-    0.9182,
-    0.3758
+    0.3172,
+    0.9176,
+    0.3602
    ],
    "text": "• Architected a multi-agent saree-design tagging pipeline orchestrated with LangGraph, coordinating 5+ vision and LLM tools to extract visual features, auto-generate structured tags and embeddings, and persist design metadata to a MongoDB collection — cataloging 5,000+ saree designs and cutting manual tagging effort by 70%."
   },
@@ -187,438 +187,449 @@
    "cls": "list-item",
    "bbox": [
     0.0588,
-    0.3796,
-    0.9166,
-    0.4062
+    0.3617,
+    0.9161,
+    0.3915
    ],
-   "text": "• Built a document-intelligence pipeline with Docling, applying OCR and vision models to make PDFs and scanned PDFs LLM-ready with over 95% extraction accuracy."
+   "text": "• Built the orchestrator to also generate new saree designs, answer sales-data queries, generate visualizations, run trend research with illustrated PPT and PDF outputs, and pick out and display catalogue designs linked to sales data via design ID."
   },
   {
    "order": 18,
    "cls": "list-item",
    "bbox": [
     0.0588,
-    0.4102,
-    0.8943,
-    0.4221
+    0.392,
+    0.9172,
+    0.4218
+   ],
+   "text": "• Built a document-intelligence pipeline with Docling, applying OCR and vision models to make PDFs and scanned PDFs LLM-ready with over 95% extraction accuracy."
+  },
+  {
+   "order": 19,
+   "cls": "list-item",
+   "bbox": [
+    0.0588,
+    0.4223,
+    0.8912,
+    0.4369
    ],
    "text": "• Integrated the TwelveLabs video API to auto-generate timestamps of sports events from live video feeds with over 85% accuracy."
   },
   {
-   "order": 19,
+   "order": 20,
    "cls": "role",
    "bbox": [
     0.0588,
-    0.4273,
-    0.1837,
-    0.4393
+    0.4394,
+    0.1828,
+    0.454
    ],
    "text": "Data Science Intern"
   },
   {
-   "order": 20,
+   "order": 21,
    "cls": "meta",
    "bbox": [
-    0.8133,
-    0.4273,
-    0.9413,
-    0.4393
+    0.8171,
+    0.4394,
+    0.9448,
+    0.454
    ],
    "text": "Sep 2024 – Jun 2025"
-  },
-  {
-   "order": 21,
-   "cls": "list-item",
-   "bbox": [
-    0.0588,
-    0.4434,
-    0.8582,
-    0.4553
-   ],
-   "text": "• Implemented computer vision and fine-tuned ML models for corrosion detection in metal pipelines with over 90% accuracy."
   },
   {
    "order": 22,
    "cls": "list-item",
    "bbox": [
     0.0588,
-    0.4593,
-    0.7046,
-    0.4712
+    0.4545,
+    0.8582,
+    0.4691
    ],
-   "text": "• Detected litter and spillage in real-time footage using DeepSORT and YOLO with over 91% accuracy."
+   "text": "• Implemented computer vision and fine-tuned ML models for corrosion detection in metal pipelines with over 90% accuracy."
   },
   {
    "order": 23,
    "cls": "list-item",
    "bbox": [
     0.0588,
-    0.475,
-    0.8799,
-    0.5017
+    0.4706,
+    0.7037,
+    0.4852
    ],
-   "text": "• Translated soccer commentary from English to Hindi using the Whisper API and IndicParler TTS, and ran 3+ CV models (YOLOv8, YOLOv8x-pose) for pose estimation, keypoint detection, and object tracking."
+   "text": "• Detected litter and spillage in real-time footage using DeepSORT and YOLO with over 91% accuracy."
   },
   {
    "order": 24,
    "cls": "list-item",
    "bbox": [
     0.0588,
-    0.5056,
-    0.913,
-    0.5323
+    0.4867,
+    0.8805,
+    0.5155
    ],
-   "text": "• Applied a Google BERT embedding model with custom field-weighting to deduplicate patient records across two tables into a master table with 95% accuracy."
+   "text": "• Translated soccer commentary from English to Hindi using the Whisper API and IndicParler TTS, and ran 3+ CV models (YOLOv8, YOLOv8x-pose) for pose estimation, keypoint detection, and object tracking."
   },
   {
    "order": 25,
    "cls": "list-item",
    "bbox": [
     0.0588,
-    0.5363,
-    0.9399,
-    0.5482
+    0.517,
+    0.913,
+    0.5458
+   ],
+   "text": "• Applied a Google BERT embedding model with custom field-weighting to deduplicate patient records across two tables into a master table with 95% accuracy."
+  },
+  {
+   "order": 26,
+   "cls": "list-item",
+   "bbox": [
+    0.0588,
+    0.5473,
+    0.9377,
+    0.5619
    ],
    "text": "• Extracted and encoded pictogram data from two PDF versions and regenerated a merged PDF using Mistral OCR with over 98% accuracy."
   },
   {
-   "order": 26,
+   "order": 27,
    "cls": "org",
    "bbox": [
     0.0588,
-    0.5548,
-    0.3178,
-    0.5681
+    0.564,
+    0.3176,
+    0.5803
    ],
    "text": "University of Massachusetts, Boston"
   },
   {
-   "order": 27,
+   "order": 28,
    "cls": "meta",
    "bbox": [
-    0.868,
-    0.5558,
-    0.9414,
-    0.5678
+    0.8721,
+    0.5653,
+    0.9448,
+    0.5799
    ],
    "text": "Boston, MA"
   },
   {
-   "order": 28,
+   "order": 29,
    "cls": "role",
    "bbox": [
     0.0588,
-    0.5708,
-    0.3259,
-    0.5828
+    0.5805,
+    0.3242,
+    0.5951
    ],
    "text": "Project Assistant, Full-Stack Development"
   },
   {
-   "order": 29,
+   "order": 30,
    "cls": "meta",
    "bbox": [
-    0.8058,
-    0.5708,
-    0.9411,
-    0.5828
+    0.8099,
+    0.5805,
+    0.9448,
+    0.5951
    ],
    "text": "Feb 2024 – May 2024"
-  },
-  {
-   "order": 30,
-   "cls": "list-item",
-   "bbox": [
-    0.0588,
-    0.5867,
-    0.9078,
-    0.6134
-   ],
-   "text": "• Automated extraction and summarization of medical research articles in a web app using TensorFlow, Gensim, and BERT, increasing content accessibility for healthcare professionals by 25%."
   },
   {
    "order": 31,
    "cls": "list-item",
    "bbox": [
     0.0588,
-    0.6173,
-    0.6501,
-    0.6293
+    0.5966,
+    0.9042,
+    0.6254
+   ],
+   "text": "• Automated extraction and summarization of medical research articles in a web app using TensorFlow, Gensim, and BERT, increasing content accessibility for healthcare professionals by 25%."
+  },
+  {
+   "order": 32,
+   "cls": "list-item",
+   "bbox": [
+    0.0588,
+    0.6269,
+    0.6515,
+    0.6415
    ],
    "text": "• Developed a PyQt5 desktop app for labeling VAS data, improving labeling accuracy by 15%."
   },
   {
-   "order": 32,
+   "order": 33,
    "cls": "org",
    "bbox": [
     0.0588,
-    0.6358,
-    0.183,
-    0.6492
+    0.6436,
+    0.1817,
+    0.6598
    ],
    "text": "Lynchval Systems"
   },
   {
-   "order": 33,
+   "order": 34,
    "cls": "meta",
    "bbox": [
-    0.868,
-    0.6369,
-    0.9414,
-    0.6488
+    0.8721,
+    0.6449,
+    0.9448,
+    0.6595
    ],
    "text": "Boston, MA"
   },
   {
-   "order": 34,
+   "order": 35,
    "cls": "role",
    "bbox": [
     0.0588,
-    0.6519,
-    0.2231,
-    0.6638
+    0.66,
+    0.2223,
+    0.6746
    ],
    "text": "Database Engineer Intern"
   },
   {
-   "order": 35,
+   "order": 36,
    "cls": "meta",
    "bbox": [
-    0.8119,
-    0.6519,
-    0.9412,
-    0.6638
+    0.8157,
+    0.66,
+    0.9448,
+    0.6746
    ],
    "text": "May 2023 – Jul 2023"
   },
   {
-   "order": 36,
+   "order": 37,
    "cls": "list-item",
    "bbox": [
     0.0588,
-    0.6678,
-    0.7289,
-    0.6797
+    0.6761,
+    0.7304,
+    0.6907
    ],
    "text": "• Enhanced predictive analytics by optimizing SQL database queries, reducing data interval times by 15%."
   },
   {
-   "order": 37,
+   "order": 38,
    "cls": "org",
    "bbox": [
     0.0588,
-    0.6863,
-    0.1748,
-    0.6996
+    0.6919,
+    0.1749,
+    0.7081
    ],
    "text": "Curved Pixel LLP"
   },
   {
-   "order": 38,
+   "order": 39,
    "cls": "meta",
    "bbox": [
-    0.8547,
-    0.6873,
-    0.9414,
-    0.6993
+    0.8594,
+    0.6931,
+    0.9448,
+    0.7078
    ],
    "text": "Kolkata, India"
   },
   {
-   "order": 39,
+   "order": 40,
    "cls": "role",
    "bbox": [
     0.0588,
-    0.7025,
-    0.1902,
-    0.7144
+    0.7092,
+    0.1895,
+    0.7239
    ],
    "text": "Full-Stack Developer"
   },
   {
-   "order": 40,
+   "order": 41,
    "cls": "meta",
    "bbox": [
-    0.8123,
-    0.7025,
-    0.9413,
-    0.7144
+    0.8161,
+    0.7092,
+    0.9449,
+    0.7239
    ],
    "text": "Dec 2020 – Jun 2022"
-  },
-  {
-   "order": 41,
-   "cls": "list-item",
-   "bbox": [
-    0.0588,
-    0.7182,
-    0.9203,
-    0.7449
-   ],
-   "text": "• Led development of 5+ dynamic web pages and 3 complex APIs using Python, React, JavaScript, HTML, CSS, MUI, and Flask, improving overall system efficiency and user engagement."
   },
   {
    "order": 42,
    "cls": "list-item",
    "bbox": [
     0.0588,
-    0.7489,
-    0.5509,
-    0.7608
+    0.7244,
+    0.9215,
+    0.7542
+   ],
+   "text": "• Led development of 5+ dynamic web pages and 3 complex APIs using Python, React, JavaScript, HTML, CSS, MUI, and Flask, improving overall system efficiency and user engagement."
+  },
+  {
+   "order": 43,
+   "cls": "list-item",
+   "bbox": [
+    0.0588,
+    0.7547,
+    0.5527,
+    0.7693
    ],
    "text": "• Improved site response time by 20% through optimized JavaScript and CSS."
   },
   {
-   "order": 43,
+   "order": 44,
    "cls": "section-header",
    "bbox": [
     0.0588,
-    0.77,
-    0.1291,
-    0.7833
+    0.7733,
+    0.1288,
+    0.7896
    ],
    "text": "PROJECTS"
   },
   {
-   "order": 44,
+   "order": 45,
    "cls": "org",
    "bbox": [
     0.0588,
-    0.7935,
-    0.3279,
-    0.8068
+    0.7951,
+    0.3272,
+    0.8113
    ],
    "text": "Fletch Homes — Real Estate Web App"
   },
   {
-   "order": 45,
+   "order": 46,
    "cls": "list-item",
    "bbox": [
     0.0588,
-    0.8095,
-    0.8978,
-    0.8361
+    0.8134,
+    0.8971,
+    0.8422
    ],
    "text": "• Built a real estate web app with a team of 3 (5+ back-end and 7+ front-end components) using Flask, Firebase, Postman, AWS, and Docker."
   },
   {
-   "order": 46,
+   "order": 47,
    "cls": "org",
    "bbox": [
     0.0588,
-    0.8427,
-    0.1218,
-    0.856
+    0.8443,
+    0.122,
+    0.8606
    ],
    "text": "iConcern"
   },
   {
-   "order": 47,
+   "order": 48,
    "cls": "list-item",
    "bbox": [
     0.0588,
-    0.8587,
-    0.8013,
-    0.8707
+    0.8627,
+    0.8029,
+    0.8773
    ],
    "text": "• Implemented two types of topic modeling and caching with NLP (Gensim, BERT) over a MongoDB-backed web app."
   },
   {
-   "order": 48,
+   "order": 49,
    "cls": "section-header",
    "bbox": [
     0.0588,
-    0.8798,
-    0.1448,
-    0.8932
+    0.8812,
+    0.1438,
+    0.8975
    ],
    "text": "EDUCATION"
   },
   {
-   "order": 49,
+   "order": 50,
    "cls": "org",
    "bbox": [
     0.0588,
-    0.9033,
-    0.3178,
-    0.9166
+    0.903,
+    0.3176,
+    0.9193
    ],
    "text": "University of Massachusetts, Boston"
   },
   {
-   "order": 50,
+   "order": 51,
    "cls": "meta",
    "bbox": [
-    0.868,
+    0.8721,
     0.9043,
-    0.9414,
-    0.9163
+    0.9448,
+    0.9189
    ],
    "text": "Boston, MA"
   },
   {
-   "order": 51,
+   "order": 52,
    "cls": "role",
    "bbox": [
     0.0588,
-    0.9193,
-    0.2943,
-    0.9313
+    0.9195,
+    0.2932,
+    0.9341
    ],
    "text": "Master of Science, Computer Science"
   },
   {
-   "order": 52,
+   "order": 53,
    "cls": "meta",
    "bbox": [
-    0.8782,
-    0.9193,
-    0.9413,
-    0.9313
+    0.8818,
+    0.9195,
+    0.9448,
+    0.9341
    ],
    "text": "May 2024"
   },
   {
-   "order": 53,
+   "order": 54,
    "cls": "org",
    "bbox": [
     0.0588,
-    0.9379,
-    0.1875,
-    0.9512
+    0.9362,
+    0.1873,
+    0.9524
    ],
    "text": "Kalyani University"
   },
   {
-   "order": 54,
+   "order": 55,
    "cls": "meta",
    "bbox": [
-    0.8231,
-    0.9389,
-    0.9413,
-    0.9509
+    0.8277,
+    0.9375,
+    0.9448,
+    0.9521
    ],
    "text": "West Bengal, India"
   },
   {
-   "order": 55,
+   "order": 56,
    "cls": "role",
    "bbox": [
     0.0588,
-    0.9541,
-    0.3711,
-    0.966
+    0.9526,
+    0.3672,
+    0.9672
    ],
    "text": "Bachelor of Technology, Information Technology"
   },
   {
-   "order": 56,
+   "order": 57,
    "cls": "meta",
    "bbox": [
-    0.8845,
-    0.9541,
-    0.9413,
-    0.966
+    0.8882,
+    0.9526,
+    0.9449,
+    0.9672
    ],
    "text": "Oct 2020"
   }
@@ -627,10 +638,10 @@
   {
    "cls": "pii.phone",
    "bbox": [
-    0.1362,
-    0.0629,
-    0.2445,
-    0.0781
+    0.1395,
+    0.0536,
+    0.2478,
+    0.0712
    ]
   }
  ]

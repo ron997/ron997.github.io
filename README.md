@@ -28,15 +28,21 @@ lay it out.
 - `results` entries name the bullet they come from (`source`), so the ledger can
   show the resume line number.
 
-## When the resume PDF changes
+## Update the resume
 
-The hero image and the layout data are generated from the PDF. Put the new
-`Rounak Burman - Resume.pdf` (and, if it changes, the portrait JPEG) in the project
-root, then run:
+The resume PDF is built from `resume/resume.html`, which recreates the original
+Word layout (Calibri, navy headings, one Letter page). That file stays local and
+out of git because it contains the phone number. Edit it, then run:
 
 ```bash
+npm run resume     # builds "Rounak Burman - Resume.pdf" with the installed Edge or Chrome
 npm run assets     # needs Python 3 with PyMuPDF and Pillow: pip install pymupdf pillow
 ```
+
+`npm run resume` refuses to build if the content no longer fits on one page.
+`npm run assets` then refreshes everything the site derives from the PDF.
+The hero image and the layout data are generated from the PDF; if you replace
+the PDF or the portrait JPEG by hand, just run `npm run assets`.
 
 This rewrites `public/Rounak-Burman-Resume.pdf`, `src/assets/resume-page-*.webp`,
 `src/data/resume-layout.json` and the portrait files. The phone number is found and

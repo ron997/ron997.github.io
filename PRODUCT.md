@@ -67,8 +67,8 @@ orchestration (LangGraph, A2A) is the differentiator, backed by measured accurac
   accuracy, >90% corrosion detection, >91% litter/spillage detection, 95% record dedup accuracy, >98% OCR
   accuracy, +25% content accessibility, +15% labelling accuracy, −15% data interval times, +20% site response.
 - `WhatsApp Image 2026-10-08 at 6.24.21 PM.jpeg`: graduation portrait, UMass Boston commencement.
-- **Confirmed by Rounak on 2026-10-08, not yet in the resume PDF** (the site states these; the PDF, the parsed
-  hero page and its layout data still show the older text until the PDF is updated and `npm run assets` is rerun):
+- **Confirmed by Rounak on 2026-10-08** and now in both the site and the resume PDF (rebuilt from
+  `resume/resume.html`; the Word original is kept locally as `Rounak Burman - Resume (original 2026-09-29).pdf`):
   - Shipping is Docker, Kubernetes and AWS. MongoDB is a database, not part of shipping.
   - Databases: PostgreSQL, MongoDB and Elasticsearch.
   - LangGraph and A2A are core skills.

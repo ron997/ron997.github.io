@@ -92,6 +92,42 @@
         ],
         "createdAt": "2026-10-08T14:22:30.854Z",
         "reason": "agent: git-ignored direction-round preview written before DESIGN.md existed; never shipped"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "resume/resume.html"
+        ],
+        "createdAt": "2026-10-08T15:03:21.170Z",
+        "reason": "agent: print resume replicating Rounak's existing Word resume styling (Calibri, navy, black org names); separate document, not the website design system"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          "resume/resume.html"
+        ],
+        "createdAt": "2026-10-08T15:03:21.237Z",
+        "reason": "agent: print resume replicating Rounak's existing Word resume styling (Calibri, navy, black org names); separate document, not the website design system"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "*",
+        "files": [
+          "resume/resume.html"
+        ],
+        "createdAt": "2026-10-08T15:03:21.330Z",
+        "reason": "agent: print resume replicating Rounak's existing Word resume styling (Calibri, navy, black org names); separate document, not the website design system"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "*",
+        "files": [
+          "resume/resume.html"
+        ],
+        "createdAt": "2026-10-08T15:03:21.396Z",
+        "reason": "agent: print resume replicating Rounak's existing Word resume styling (Calibri, navy, black org names); separate document, not the website design system"
       }
     ]
   }

@@ -64,29 +64,44 @@ def classify(seg: dict, page_w: float) -> str:
 
 def extract_layout(page: pymupdf.Page) -> list[dict]:
     W = page.rect.width
+    # Group spans by baseline across the whole page rather than by the PDF's own
+    # text lines: Word writes "•  text" as one run, a browser writes the bullet and
+    # the text as separate runs, and both must read as one list item.
+    spans = [s for b in page.get_text("dict")["blocks"] if b.get("type") == 0
+             for line in b["lines"] for s in line["spans"] if s["text"].strip()]
+    rows: list[list[dict]] = []
+    for s in sorted(spans, key=lambda s: (s["origin"][1], s["bbox"][0])):
+        if rows and abs(rows[-1][0]["origin"][1] - s["origin"][1]) < 1.0:
+            rows[-1].append(s)
+        else:
+            rows.append([s])
     segments = []
-    for b in page.get_text("dict")["blocks"]:
-        if b.get("type") != 0:
-            continue
-        for line in b["lines"]:
-            spans = sorted((s for s in line["spans"] if s["text"].strip()), key=lambda s: s["bbox"][0])
-            if not spans:
-                continue
-            groups = [[spans[0]]]
-            for s in spans[1:]:
-                if s["bbox"][0] - groups[-1][-1]["bbox"][2] > 24:
-                    groups.append([s])
-                else:
-                    groups[-1].append(s)
-            for g in groups:
-                segments.append({
-                    "x0": min(s["bbox"][0] for s in g), "y0": min(s["bbox"][1] for s in g),
-                    "x1": max(s["bbox"][2] for s in g), "y1": max(s["bbox"][3] for s in g),
-                    "text": "".join(s["text"] for s in g).strip(),
-                    "size": max(s["size"] for s in g),
-                    "bold": any(("Bold" in s["font"]) or (s["flags"] & 16) for s in g),
-                    "italic": all(("Italic" in s["font"]) or (s["flags"] & 2) for s in g),
-                })
+    for row in rows:
+        row.sort(key=lambda s: s["bbox"][0])
+        groups = [[row[0]]]
+        for s in row[1:]:
+            if s["bbox"][0] - groups[-1][-1]["bbox"][2] > 24:
+                groups.append([s])
+            else:
+                groups[-1].append(s)
+        for g in groups:
+            text = ""
+            prev = None
+            for s in g:
+                # a separate run starts a new word only where there is a visible gap
+                gap = s["bbox"][0] - prev["bbox"][2] if prev else 0
+                if text and not text.endswith(" ") and not s["text"].startswith(" ") and gap > 0.15 * s["size"]:
+                    text += " "
+                text += s["text"]
+                prev = s
+            segments.append({
+                "x0": min(s["bbox"][0] for s in g), "y0": min(s["bbox"][1] for s in g),
+                "x1": max(s["bbox"][2] for s in g), "y1": max(s["bbox"][3] for s in g),
+                "text": text.strip(),
+                "size": max(s["size"] for s in g),
+                "bold": any(("Bold" in s["font"]) or (s["flags"] & 16) for s in g),
+                "italic": all(("Italic" in s["font"]) or (s["flags"] & 2) for s in g),
+            })
     segments.sort(key=lambda s: (round(s["y0"]), s["x0"]))
 
     elements: list[dict] = []
