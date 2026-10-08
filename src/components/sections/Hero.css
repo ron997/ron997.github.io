@@ -1,0 +1,134 @@
+.hero {
+  --hero-h: clamp(640px, calc(100svh - var(--nav-h) - var(--gutter)), 1000px);
+  --pad-y: clamp(24px, 2.8vw, 44px);
+  position: relative;
+  width: min(100% - 2 * var(--gutter), var(--container));
+  margin-inline: auto;
+  min-height: var(--hero-h);
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(36px, 5vw, 88px);
+  padding: var(--pad-y) var(--inset) var(--pad-y) clamp(28px, 3.6vw, 60px);
+  background: var(--night);
+  color: var(--on-night);
+  border-radius: var(--r-panel);
+  overflow: clip;
+  isolation: isolate;
+}
+
+/* ---------- the page being read ---------- */
+.hero__stage { display: flex; flex-direction: column; align-items: center; gap: 22px; min-width: 0; }
+.hero__page {
+  position: relative;
+  width: min(calc((var(--hero-h) - 2 * var(--pad-y) - 60px) * 0.7727), 40vw);
+  aspect-ratio: 1224 / 1584;
+  transform: rotate(-2deg);
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: var(--shadow-page);
+}
+.hero__page img { width: 100%; height: 100%; border-radius: 3px; }
+.hero__boxes { position: absolute; inset: 0; }
+
+.lbox {
+  position: absolute;
+  border: 1.5px solid var(--signal);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color .2s var(--ease-house);
+}
+.lbox[data-cls="title"], .lbox[data-cls="section-header"] { background: rgba(255, 210, 31, 0.2); }
+.lbox[data-cls="meta"] { border-style: dashed; }
+.lbox.is-hover { background: rgba(255, 210, 31, 0.42); }
+.lbox b {
+  position: absolute; left: -1.5px; bottom: 100%;
+  font: 400 9px/1 var(--mono); letter-spacing: 0;
+  background: var(--signal); color: var(--signal-ink);
+  padding: 2px 4px 2px 3px; border-radius: 2px 2px 0 0; white-space: nowrap;
+  pointer-events: none;
+}
+/* Labels are placed by class so none ever covers the text it classifies:
+   the title keeps its label above (top margin of the page), section headers and
+   the contact line get theirs on the empty right end of the same line, and the
+   redaction label sits in the clear space above the bar, left of the title.
+   Everything else shows its label only while hovered. */
+.lbox[data-cls]:not([data-cls="title"]):not([data-cls="contact"]):not([data-cls="section-header"]) b { display: none; }
+.lbox[data-cls="section-header"] b,
+.lbox[data-cls="contact"] b { left: calc(100% + 4px); bottom: auto; top: -1.5px; border-radius: 2px; }
+.lbox.is-hover b { display: block !important; z-index: 2; }
+.lbox--redact { cursor: default; z-index: 1; }
+.lbox--redact b { display: block; }
+
+.hero__inspector {
+  width: 100%;
+  max-width: 34rem;
+  min-height: 1.4em;
+  text-align: center;
+  color: var(--on-night-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hero__inspector .hl { color: var(--signal); }
+
+/* ---------- the extracted fields ---------- */
+.hero__fields { display: flex; flex-direction: column; gap: clamp(20px, 2.4vw, 34px); min-width: 0; }
+.field { display: grid; grid-template-columns: clamp(72px, 6.6vw, 108px) minmax(0, 1fr); align-items: start; gap: 18px; }
+.field__k { padding-top: 9px; border-top: 1px solid var(--rule-night); color: var(--on-night-2); font-size: 0.75rem; }
+.field--title .field__k { margin-top: 0.75em; }
+
+.hero__name-box { min-width: 0; }
+.hero__name {
+  --fit-ratio: 4.25;
+  width: max-content;
+  font-weight: 850;
+  font-stretch: 112%;
+  letter-spacing: -0.045em;
+  line-height: 0.84;
+}
+.hero__name span { display: block; }
+.hero__name span:last-child { color: var(--signal); }
+
+.hero__lede { font-size: clamp(1.125rem, 1.42vw, 1.375rem); line-height: 1.45; max-width: 35ch; }
+.hero__cta { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero__where { margin-top: 14px; color: var(--on-night-2); }
+
+/* ---------- the wire: extracted title → headline ---------- */
+.hero__wire { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; z-index: 2; }
+.hero__wire path { fill: none; stroke: var(--signal); stroke-width: 1.5; stroke-dasharray: var(--len); stroke-dashoffset: 0; }
+.hero__wire circle { fill: var(--signal); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .lbox { animation: lbox-in .34s var(--ease-out) both; animation-delay: calc(.35s + var(--i) * 15ms); }
+  .lbox--redact { animation: lbox-in .4s var(--ease-out) 1.25s both; }
+  @keyframes lbox-in { from { opacity: 0; transform: scale(1.06); } }
+  .lbox[data-cls="title"] { animation: lbox-in .34s var(--ease-out) .35s both, title-lit .6s var(--ease-house) 1.35s forwards; }
+  @keyframes title-lit { to { background: rgba(255, 210, 31, 0.5); } }
+  .hero__wire path { stroke-dashoffset: var(--len); animation: wire 1.1s var(--ease-out) 1.35s forwards; }
+  @keyframes wire { to { stroke-dashoffset: 0; } }
+  .hero__wire circle { opacity: 0; animation: dot .3s var(--ease-out) forwards; }
+  .hero__wire circle:first-of-type { animation-delay: 1.3s; }
+  .hero__wire circle:last-of-type { animation-delay: 2.1s; }
+  @keyframes dot { to { opacity: 1; } }
+  .hero__page { animation: page-in 1s var(--ease-out) both; }
+  @keyframes page-in { from { opacity: 0; transform: rotate(-4deg) translateY(28px); } }
+}
+
+/* ---------- single column: the fields lead, the page follows ---------- */
+@media (max-width: 1023px) {
+  .hero { grid-template-columns: minmax(0, 1fr); min-height: 0; gap: 28px; padding: clamp(28px, 6vw, 48px) clamp(20px, 5vw, 44px); }
+  .hero__fields { display: contents; }
+  .field--title { order: 1; }
+  .field--summary { order: 2; }
+  .field--contact { order: 3; }
+  .hero__stage { order: 4; padding-block: 12px 4px; }
+  .field--skills { order: 5; }
+  .hero__page { width: min(76vw, 440px); }
+  .lbox b { display: none !important; }
+}
+@media (max-width: 639px) {
+  .field { grid-template-columns: minmax(0, 1fr); }
+  .field__k { display: none; }
+  .hero__inspector { white-space: normal; font-size: 0.75rem; }
+}

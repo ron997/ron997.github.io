@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ron997.github.io/sitemap.xml

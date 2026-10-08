@@ -1,0 +1,62 @@
+.experience__panel { padding-block: clamp(28px, 4vw, 64px); padding-inline: clamp(12px, 3vw, 48px); }
+
+.stack { display: flex; flex-direction: column; gap: 20px; }
+.stack.is-stacked { display: block; }
+.stack.is-stacked .stack__item { position: sticky; margin-bottom: 40px; }
+.stack.is-stacked .stack__item:last-child { margin-bottom: 0; }
+
+.role {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--paper);
+  border-radius: var(--r-card);
+  box-shadow: var(--shadow-card);
+  padding: clamp(24px, 3.4vw, 52px);
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 7fr);
+  gap: clamp(24px, 4.4vw, 80px);
+  align-items: start;
+  transform-origin: 50% 0%;
+}
+.stack.is-stacked .role { align-items: stretch; }
+
+.role__side { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+.role__org {
+  font-size: var(--t-h3);
+  font-weight: 800;
+  font-stretch: 108%;
+  letter-spacing: -0.035em;
+  line-height: 1;
+}
+.role__title { margin-top: 10px; font-size: clamp(1.0625rem, 1.3vw, 1.25rem); font-weight: 600; color: var(--ink-2); }
+.role__meta { display: grid; gap: 6px; }
+.role__meta div { display: grid; grid-template-columns: 4.5rem 1fr; gap: 12px; }
+.role__meta dt { color: var(--ink-3); }
+.role__meta dd { color: var(--ink); }
+
+.role__bullets { display: grid; gap: 16px; max-width: 70ch; align-content: start; }
+.role__bullets li {
+  position: relative;
+  padding-left: 26px;
+  font-size: clamp(1.0313rem, 1.18vw, 1.1875rem);
+  line-height: 1.55;
+}
+.role__bullets li::before {
+  content: "";
+  position: absolute; left: 2px; top: 0.5em;
+  width: 10px; height: 10px;
+  border-left: 2px solid var(--ink); border-top: 2px solid var(--ink);
+}
+.role__bullets strong { font-weight: 700; }
+
+.role__tags { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; padding-top: 18px; border-top: 1px solid var(--rule); color: var(--ink-2); }
+.role__tags-k { color: var(--ink-3); margin-right: 4px; }
+.role__tag { padding: 3px 9px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--rule); }
+
+.role__shade { position: absolute; inset: 0; background: var(--panel); pointer-events: none; z-index: 1; }
+
+@media (max-width: 900px) {
+  .role { grid-template-columns: minmax(0, 1fr); }
+  .role__tags { margin-top: 0; }
+}

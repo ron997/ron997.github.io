@@ -1,0 +1,495 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T14:18:05+00:00",
+  "title": "Design System: Rounak Burman Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "annotation-yellow": {
+        "role": "primary",
+        "displayName": "Annotation Yellow",
+        "canonical": "#FFD21F",
+        "oklch": "oklch(87.7% 0.174 92.5)",
+        "tonalRamp": [
+          "#1A0500",
+          "#361F00",
+          "#603600",
+          "#805500",
+          "#A57A00",
+          "#CB9F00",
+          "#F2C600",
+          "#FFED9C"
+        ]
+      },
+      "signal-ink": {
+        "role": "neutral",
+        "displayName": "Signal Ink",
+        "canonical": "#14171C",
+        "oklch": "oklch(20.4% 0.011 260.7)",
+        "tonalRamp": [
+          "#0A0B0E",
+          "#222427",
+          "#3C4046",
+          "#5A5E64",
+          "#7C8087",
+          "#A1A5AC",
+          "#C6CBD2",
+          "#ECEFF3"
+        ]
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Canvas",
+        "canonical": "#F1F2EF",
+        "oklch": "oklch(96.0% 0.004 121.6)",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#242423",
+          "#3F403E",
+          "#5D5E5B",
+          "#80817E",
+          "#A4A5A2",
+          "#CACBC8",
+          "#EEEFED"
+        ]
+      },
+      "panel-light": {
+        "role": "neutral",
+        "displayName": "Light Panel",
+        "canonical": "#E4E6E2",
+        "oklch": "oklch(92.2% 0.006 128.5)",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#232423",
+          "#3F403D",
+          "#5D5E5B",
+          "#7F817D",
+          "#A3A5A1",
+          "#C9CBC7",
+          "#EEEFEC"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#FAFAF8",
+        "oklch": "oklch(98.5% 0.003 106.4)",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#242423",
+          "#40403E",
+          "#5E5E5C",
+          "#80807E",
+          "#A5A5A3",
+          "#CACAC9",
+          "#EEEEED"
+        ]
+      },
+      "night": {
+        "role": "neutral",
+        "displayName": "Night",
+        "canonical": "#14171C",
+        "oklch": "oklch(20.4% 0.011 260.7)",
+        "tonalRamp": [
+          "#0A0B0E",
+          "#222427",
+          "#3C4046",
+          "#5A5E64",
+          "#7C8087",
+          "#A1A5AC",
+          "#C6CBD2",
+          "#ECEFF3"
+        ]
+      },
+      "night-2": {
+        "role": "neutral",
+        "displayName": "Night 2",
+        "canonical": "#1D2127",
+        "oklch": "oklch(24.6% 0.013 258.4)",
+        "tonalRamp": [
+          "#090B0E",
+          "#222428",
+          "#3C4047",
+          "#595E65",
+          "#7C8188",
+          "#A0A5AD",
+          "#C5CBD3",
+          "#EBEFF4"
+        ]
+      },
+      "night-3": {
+        "role": "neutral",
+        "displayName": "Night 3",
+        "canonical": "#2A2F36",
+        "oklch": "oklch(30.3% 0.014 256.8)",
+        "tonalRamp": [
+          "#090B0F",
+          "#212428",
+          "#3B4048",
+          "#585E66",
+          "#7B8189",
+          "#9FA5AE",
+          "#C5CBD4",
+          "#EBEFF4"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#14171C",
+        "oklch": "oklch(20.4% 0.011 260.7)",
+        "tonalRamp": [
+          "#0A0B0E",
+          "#222427",
+          "#3C4046",
+          "#5A5E64",
+          "#7C8087",
+          "#A1A5AC",
+          "#C6CBD2",
+          "#ECEFF3"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "#4C5159",
+        "oklch": "oklch(43.3% 0.015 259.8)",
+        "tonalRamp": [
+          "#090B0F",
+          "#222428",
+          "#3B4048",
+          "#595E66",
+          "#7B8189",
+          "#9FA5AE",
+          "#C5CBD4",
+          "#EBEFF5"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink 3",
+        "canonical": "#62676F",
+        "oklch": "oklch(51.2% 0.014 259.8)",
+        "tonalRamp": [
+          "#090B0F",
+          "#222428",
+          "#3B4047",
+          "#595E66",
+          "#7B8189",
+          "#9FA5AE",
+          "#C5CBD4",
+          "#EBEFF4"
+        ]
+      },
+      "on-night": {
+        "role": "neutral",
+        "displayName": "On Night",
+        "canonical": "#EEEFEC",
+        "oklch": "oklch(95.1% 0.004 121.6)",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#242423",
+          "#3F403E",
+          "#5D5E5B",
+          "#80817E",
+          "#A4A5A2",
+          "#CACBC8",
+          "#EEEFED"
+        ]
+      },
+      "on-night-2": {
+        "role": "neutral",
+        "displayName": "On Night 2",
+        "canonical": "#A3A8AF",
+        "oklch": "oklch(73.0% 0.012 256.7)",
+        "tonalRamp": [
+          "#090B0E",
+          "#222427",
+          "#3C4046",
+          "#595E64",
+          "#7C8187",
+          "#A0A5AC",
+          "#C6CBD2",
+          "#EBEFF3"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "#CDD0CB",
+        "oklch": "oklch(85.4% 0.008 132.4)",
+        "tonalRamp": [
+          "#0A0C0A",
+          "#232422",
+          "#3E413D",
+          "#5C5F5A",
+          "#7E817D",
+          "#A3A6A1",
+          "#C9CCC7",
+          "#EDEFEC"
+        ]
+      },
+      "rule-night": {
+        "role": "neutral",
+        "displayName": "Rule Night",
+        "canonical": "#343940",
+        "oklch": "oklch(34.3% 0.014 256.8)",
+        "tonalRamp": [
+          "#090B0F",
+          "#212428",
+          "#3B4047",
+          "#595E66",
+          "#7B8189",
+          "#9FA5AE",
+          "#C5CBD4",
+          "#EBEFF4"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Giant Section Word",
+        "purpose": "The resume section headers at container scale: Results, Work experience, Technical skills, Projects, Education only."
+      },
+      "display-name": {
+        "displayName": "Fitted Name",
+        "purpose": "The hero name and the contact email, sized to their container."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Role organisations, project names, degree names."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "The scroll-revealed summary and the contact lead."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Role titles, schools, project stack, ledger result text."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text and bullets, about 70ch."
+      },
+      "label": {
+        "displayName": "Parser Label",
+        "purpose": "Fragment Mono: field keys, table headers, sources, meta. Never letterspaced uppercase."
+      },
+      "chip-label": {
+        "displayName": "Class Chip",
+        "purpose": "12px mono on the detection chip tab."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-sheet",
+        "value": "0 18px 44px rgba(20, 23, 28, 0.10), 0 2px 6px rgba(20, 23, 28, 0.05)",
+        "purpose": "Role cards in the Experience stack only."
+      },
+      {
+        "name": "page-on-night",
+        "value": "0 34px 80px rgba(0, 0, 0, 0.5), 0 2px 0 rgba(255, 255, 255, 0.05)",
+        "purpose": "The tilted resume page on the hero night panel."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Reveals: rise, detection box draw, nav underline, portrait clip."
+      },
+      {
+        "name": "ease-house",
+        "value": "cubic-bezier(0.44, 0, 0.56, 1)",
+        "purpose": "Colour and background state changes."
+      },
+      {
+        "name": "ease-hover",
+        "value": "cubic-bezier(0.4, 0.23, 0.07, 1.01)",
+        "purpose": "Pill arrow gap on hover (0.5s)."
+      },
+      {
+        "name": "rise",
+        "value": "0.9s ease-out from opacity 0, translateY(24px)",
+        "purpose": "CSS-only entrance, so the LCP never waits on JS."
+      },
+      {
+        "name": "detection-draw",
+        "value": "corners 0.25s/0.45s; edges 0.7s after 0.18s; chip 0.3s/0.5s after 0.5s",
+        "purpose": "Detection box drawing once in view."
+      },
+      {
+        "name": "word-reveal",
+        "value": "per-word opacity scrubbed by scroll, rest 0.18, from block top at 78% to 30% of viewport",
+        "purpose": "Summary read; marks swept in over the same window."
+      },
+      {
+        "name": "stack-push",
+        "value": "scale 1 to 0.92 and shade 0 to 0.62, driven by the next card arriving",
+        "purpose": "Sticky Experience stack on desktop."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation-duration .01ms, animation-delay 0s, iteration-count 1, transition: none",
+        "purpose": "End state immediately. Never set transition-duration on *."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "hero-fields-stack",
+        "value": "639px"
+      },
+      {
+        "name": "nav-compact / rows-single",
+        "value": "760px"
+      },
+      {
+        "name": "education-single / footer-single",
+        "value": "860px"
+      },
+      {
+        "name": "nav-sheet / role-single",
+        "value": "900px"
+      },
+      {
+        "name": "ledger-blocks",
+        "value": "960px"
+      },
+      {
+        "name": "hero-single",
+        "value": "1023px"
+      },
+      {
+        "name": "experience-sticky-stack",
+        "value": "1024px wide and 700px tall"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Pill",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The primary action (Email me) on any ground. The arrow pulls away on hover.",
+      "html": "<a class=\"ds-pill\" href=\"#\">Email me <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M7 17 17 7M8 7h9v9\"/></svg></a>",
+      "css": ".ds-pill{display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 22px 0 26px;border-radius:999px;font-family:var(--display);font-weight:600;font-size:1rem;letter-spacing:-0.005em;white-space:nowrap;text-decoration:none;transition:gap .5s var(--ease-hover),background-color .3s var(--ease-house),color .3s var(--ease-house);background:var(--signal);color:var(--signal-ink)}.ds-pill svg{width:18px;height:18px;flex:none}.ds-pill:hover{gap:16px;background:var(--ink);color:var(--on-night)}.ds-pill:focus-visible{outline:2px solid var(--ink);outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Pill",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action on night: Download resume.",
+      "html": "<div class=\"ds-night\"><a class=\"ds-ghost\" href=\"#\">Download resume <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M12 4v12m-5-5 5 5 5-5M5 20h14\"/></svg></a></div>",
+      "css": ".ds-night{background:var(--night);padding:24px;border-radius:24px;display:flex;gap:8px;flex-wrap:wrap}.ds-ghost{display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 22px 0 26px;border-radius:999px;font-family:var(--display);font-weight:600;font-size:1rem;letter-spacing:-0.005em;white-space:nowrap;text-decoration:none;transition:gap .5s var(--ease-hover),background-color .3s var(--ease-house),color .3s var(--ease-house);color:var(--on-night);box-shadow:inset 0 0 0 1.5px currentColor}.ds-ghost svg{width:18px;height:18px}.ds-ghost:hover{gap:16px;background:var(--night-3)}.ds-ghost:focus-visible{outline:2px solid var(--signal);outline-offset:3px}"
+    },
+    {
+      "name": "Ink Pill",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Solid ink action on light or yellow ground.",
+      "html": "<a class=\"ds-ink\" href=\"#\">LinkedIn <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M7 17 17 7M8 7h9v9\"/></svg></a>",
+      "css": ".ds-ink{display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 22px 0 26px;border-radius:999px;font-family:var(--display);font-weight:600;font-size:1rem;letter-spacing:-0.005em;white-space:nowrap;text-decoration:none;transition:gap .5s var(--ease-hover),background-color .3s var(--ease-house),color .3s var(--ease-house);background:var(--ink);color:var(--on-night)}.ds-ink svg{width:18px;height:18px}.ds-ink:hover{gap:16px;background:var(--night-3)}.ds-ink:focus-visible{outline:2px solid var(--ink);outline-offset:3px}"
+    },
+    {
+      "name": "Skill Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "The short selected-skills row in the hero only, never a cloud.",
+      "html": "<div class=\"ds-night\"><span class=\"ds-chip\">YOLOv8</span><span class=\"ds-chip\">LangGraph</span><span class=\"ds-chip\">Docling</span></div>",
+      "css": ".ds-night{background:var(--night);padding:24px;border-radius:24px;display:flex;gap:8px;flex-wrap:wrap}.ds-chip{display:inline-flex;align-items:center;height:34px;padding:0 13px;border-radius:999px;font-family:var(--display);font-size:.875rem;font-weight:500;background:var(--night-3);color:var(--on-night)}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "button-small",
+      "description": "Sticky bar with the bracket monogram, centred links with a wipe underline, and a small Email pill.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-brand\" href=\"#\"><span class=\"ds-mark\">RB</span>Rounak Burman</a><span class=\"ds-links\"><a href=\"#\">Results</a><a href=\"#\">Experience</a><a href=\"#\">Projects</a></span><a class=\"ds-pill-sm\" href=\"#\">Email me</a></nav>",
+      "css": ".ds-nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;height:76px;padding:0 20px;background:var(--canvas);color:var(--ink);font-family:var(--display)}.ds-brand{display:inline-flex;align-items:center;gap:12px;font-weight:700;font-size:1.0625rem;color:inherit;text-decoration:none}.ds-mark{width:38px;height:38px;display:grid;place-items:center;font-weight:850;font-stretch:112%;font-size:.875rem;--c:var(--ink);background:linear-gradient(var(--c),var(--c)) top left/9px 2px,linear-gradient(var(--c),var(--c)) top left/2px 9px,linear-gradient(var(--c),var(--c)) top right/9px 2px,linear-gradient(var(--c),var(--c)) top right/2px 9px,linear-gradient(var(--c),var(--c)) bottom left/9px 2px,linear-gradient(var(--c),var(--c)) bottom left/2px 9px,linear-gradient(var(--c),var(--c)) bottom right/9px 2px,linear-gradient(var(--c),var(--c)) bottom right/2px 9px;background-repeat:no-repeat}.ds-links{display:flex;gap:32px;font-weight:500;font-size:.9375rem}.ds-links a{position:relative;padding:6px 0;color:inherit;text-decoration:none}.ds-links a::after{content:\"\";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--ink);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease-out)}.ds-links a:hover::after{transform:scaleX(1);transform-origin:left}.ds-links a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}.ds-pill-sm{justify-self:end;display:inline-flex;align-items:center;height:44px;padding:0 16px 0 20px;border-radius:999px;background:var(--signal);color:var(--signal-ink);font-weight:600;font-size:.9375rem;text-decoration:none;transition:background-color .3s var(--ease-house),color .3s var(--ease-house)}.ds-pill-sm:hover{background:var(--ink);color:var(--on-night)}"
+    },
+    {
+      "name": "Giant Section Word with Detection Box",
+      "kind": "custom",
+      "refersTo": "detection-chip",
+      "description": "The resume section header at container scale, boxed, with its class chip on the box corner (never a kicker above it).",
+      "html": "<div class=\"ds-fitbox\"><span class=\"ds-det\"><h2 class=\"ds-giant\">Projects</h2><span class=\"ds-box\"><b class=\"ds-chip-cls\">section-header · 43</b></span></span></div>",
+      "css": ".ds-fitbox{container-type:inline-size;padding-top:28px;background:var(--canvas)}.ds-det{position:relative;display:inline-block}.ds-giant{margin:0;font-family:var(--display);font-weight:850;font-stretch:112%;letter-spacing:-0.045em;line-height:.74;text-transform:uppercase;white-space:nowrap;color:var(--ink);font-size:min(13rem,calc(100cqw / 6.1));padding:.06em .06em 0 .01em}.ds-box{position:absolute;inset:.02em -.025em -.035em;border:1.5px solid var(--signal);pointer-events:none}.ds-chip-cls{position:absolute;left:-2px;bottom:calc(100% + 2px);background:var(--signal);color:var(--signal-ink);font:400 12px/1.3 var(--mono);padding:3px 8px 3px 7px;border-radius:3px 3px 3px 0;white-space:nowrap}"
+    },
+    {
+      "name": "Role Card",
+      "kind": "card",
+      "refersTo": "role-card",
+      "description": "Paper sheet in the Experience stack. Sizes to content, with bracket bullets and a mark highlight on metrics.",
+      "html": "<article class=\"ds-role\"><div><h3 class=\"ds-org\">TCG Digital</h3><p class=\"ds-title\">Data Science Consultant</p></div><ul class=\"ds-bullets\"><li>Built a document-intelligence pipeline with <strong>Docling</strong>, reaching <mark class=\"ds-hl\">over 95% extraction accuracy</mark>.</li></ul></article>",
+      "css": ".ds-role{background:var(--paper);border-radius:var(--r-card);box-shadow:var(--shadow-card);padding:clamp(24px,3.4vw,52px);display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(24px,4.4vw,80px);font-family:var(--display);color:var(--ink)}.ds-org{margin:0;font-size:var(--t-h3);font-weight:800;font-stretch:108%;letter-spacing:-0.035em;line-height:1}.ds-title{margin:10px 0 0;font-weight:600;color:var(--ink-2)}.ds-bullets{list-style:none;margin:0;padding:0}.ds-bullets li{position:relative;padding-left:26px;line-height:1.55}.ds-bullets li::before{content:\"\";position:absolute;left:2px;top:.5em;width:10px;height:10px;border-left:2px solid var(--ink);border-top:2px solid var(--ink)}.ds-hl{color:inherit;background:linear-gradient(var(--signal),var(--signal)) no-repeat 0 88%/100% .42em;padding:0 .06em}"
+    },
+    {
+      "name": "Results Ledger Row",
+      "kind": "custom",
+      "refersTo": "panel-night",
+      "description": "One row of the results ledger on night: the figure (not yellow), the result, and the mono source.",
+      "html": "<table class=\"ds-ledger\"><tbody><tr><td class=\"ds-fig\">95%</td><td class=\"ds-what\">Extraction accuracy on scanned PDFs</td><td class=\"ds-src\">line 14 · TCG Digital</td></tr></tbody></table>",
+      "css": ".ds-ledger{width:100%;border-collapse:collapse;background:var(--night);color:var(--on-night);font-family:var(--display)}.ds-ledger td{padding:20px 16px;border-bottom:1px solid var(--rule-night);vertical-align:baseline}.ds-ledger tr{transition:background-color .25s var(--ease-house)}.ds-ledger tr:hover{background:var(--night-2)}.ds-fig{font-size:clamp(1.75rem,2.6vw,2.5rem);font-weight:800;font-stretch:108%;letter-spacing:-0.04em;line-height:1;font-variant-numeric:tabular-nums;white-space:nowrap}.ds-what{font-size:clamp(1.0625rem,1.3vw,1.25rem);line-height:1.4}.ds-src{font:400 .8125rem/1.4 var(--mono);color:var(--on-night-2)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Parsed",
+    "overview": "The page is his own resume being read by a layout model. The first viewport shows the real resume page, tilted, with its layout elements landing as yellow bounding boxes in reading order; everything below it is one extracted field set at full scale. The grammar is Curvedpixel's: container-sized giant words that the next panel tucks up under, rounded light and dark panels on a pale canvas, a single accent, pill buttons, a black-and-white photograph with a colour twin, scroll-scrubbed word reveal, count-up figures, and sticky stacked cards under Lenis smooth scroll. That grammar is re-keyed here with annotation yellow, Archivo at wide widths with Fragment Mono for machine labels, and bounding-box corner brackets.\n\nThe density is editorial rather than dashboard. Each section has one giant header, one panel, and one reading structure (a ledger, a stack, field rows), with generous space between them. The machine layer of boxes, class chips, line numbers and a \"redacted\" label sits on top of human-scale type and never replaces it. The design explicitly turns down the terminal-styled hero, the skill-chip cloud, and the project card grid.",
+    "keyCharacteristics": [
+      "Giant uppercase section words: they are the resume's own section headers, sized to the container and tucked onto the panel below.",
+      "Annotation yellow is the only accent. It is used for detection boxes, highlighter marks and the primary action, and nowhere else.",
+      "Detection boxes have corner brackets, drawn edges and a mono class chip on the box corner.",
+      "Rounded night, light and yellow panels sit on a pale canvas.",
+      "Pill buttons whose arrow pulls away on hover.",
+      "The motion explains the parse. Under reduced motion it resolves to the finished state."
+    ],
+    "rules": [
+      {
+        "name": "The Annotation-Only Rule",
+        "body": "Yellow appears in three roles: the detection box (with its chip), the highlight (`mark`), and the primary action. Result figures, headings, icons and decorative fills are never yellow. The yellow surname in the hero is the end of the title wire, so it counts as an annotation of the extracted title; it is not licence for yellow display type anywhere else.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink-on-Signal Rule",
+        "body": "On a yellow ground the annotation layer flips. Boxes are drawn in Ink, chip text is yellow on Ink, selection is Ink with yellow text, and the focus ring is Ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The Container-Fit Rule",
+        "body": "One-line display type (the giant words, the hero name, the contact email) is sized to its container, never to the viewport. The hook measures the text's width-to-size ratio once per font load, with the element at a fixed 100px and its transitions off. CSS then sets `font-size: min(max, 100cqw / ratio)` inside an inline-size container. This lets long words shrink while short ones reach the cap, and resizing never waits on a script.",
+        "section": "typography"
+      },
+      {
+        "name": "The Em-Only Padding Rule",
+        "body": "A fitted element carries only em padding, so the measured ratio scales exactly. Any clearance a detection bracket needs comes from the detection box's own padding (`--det-pad`) reaching past the text, never from px padding on the measured element.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Mono is reserved for what the parser says: classes, line numbers, keys, counts and sources. Human claims are set in Archivo.",
+        "section": "typography"
+      },
+      {
+        "name": "The Paper-Only Shadow Rule",
+        "body": "A shadow means a physical sheet. Panels, pills, chips and rows stay flat.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** set every section heading as the resume's own section header: uppercase, 850 weight at 112% width, sized to the container by a measured ratio, left-aligned to the content edge, with a detection box and a `section-header · N` chip on the box corner.",
+      "**Do** measure fitted type at a fixed 100px with transitions off, and remeasure when fonts load.",
+      "**Do** get bracket clearance from the detection box padding (`--det-pad`), keeping only em padding on the measured element.",
+      "**Do** keep yellow to boxes, `mark` highlights and the primary action. On a yellow panel, draw the annotation layer in Ink.",
+      "**Do** keep the hero's `pii.phone · redacted` label always visible, and place every hero box label by class so it never covers its own text.",
+      "**Do** present results as one ledger table with each row traced to its source line, projects as parsed field rows, and experience as content-sized cards in a sticky stack on desktop.",
+      "**Do** make reduced motion mean the end state: zero animation duration and delay, `transition: none`."
+    ],
+    "donts": [
+      "**Don't** colour result figures, headings or icons yellow.",
+      "**Don't** put a class chip, or any small label, above a heading as a kicker or eyebrow. Chips attach to a box's corner.",
+      "**Don't** size giant words or the hero name to the viewport (`vw`). Size them to the container.",
+      "**Don't** set `transition-duration` on `*` for reduced motion. `transition-property` defaults to `all`, so doing that switches transitions on for every property and breaks fit measurement.",
+      "**Don't** add px padding to a fitted element to make room for brackets.",
+      "**Don't** build a project card grid, a skill-chip cloud, or a terminal-styled hero (prompt glyphs, green-on-black console type). The dark night panel itself is native to the world.",
+      "**Don't** add shadows to panels, pills or chips. Shadows belong to paper sheets only."
+    ]
+  }
+}

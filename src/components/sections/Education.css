@@ -1,0 +1,58 @@
+.education__panel {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: clamp(32px, 5vw, 96px);
+  align-items: center;
+  padding: clamp(20px, 2.4vw, 32px);
+  padding-right: var(--inset);
+}
+
+/* ---------- portrait: B/W at rest, colour twin resolves inside the box ---------- */
+.portrait {
+  --bx: 29.69%; --by: 40.47%; --bw: 50%; --bh: 59.53%;
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--r-card);
+  overflow: hidden;
+  background: var(--night-2);
+  isolation: isolate;
+}
+.portrait picture, .portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.portrait__colour {
+  clip-path: inset(var(--by) calc(100% - var(--bx) - var(--bw)) 100% var(--bx));
+  transition: clip-path 1.1s var(--ease-out);
+}
+.portrait.is-lit .portrait__colour { clip-path: inset(var(--by) calc(100% - var(--bx) - var(--bw)) 0 var(--bx)); }
+@media (hover: hover) {
+  .portrait:hover .portrait__colour { clip-path: inset(0 0 0 0); transition-duration: .8s; }
+}
+.portrait__box {
+  position: absolute; left: var(--bx); top: var(--by); width: var(--bw); height: var(--bh);
+  border: 1.5px solid var(--signal); border-bottom: 0;
+  opacity: 0; transition: opacity .5s var(--ease-out) .2s;
+}
+.portrait.is-lit .portrait__box { opacity: 1; }
+.portrait__box b {
+  position: absolute; left: -1.5px; bottom: 100%;
+  background: var(--signal); color: var(--signal-ink);
+  font: 400 12px/1.3 var(--mono); padding: 3px 8px 3px 7px; border-radius: 3px 3px 3px 0; white-space: nowrap;
+}
+.portrait figcaption {
+  position: absolute; left: 14px; bottom: 14px;
+  padding: 7px 12px; border-radius: 999px;
+  background: rgba(20, 23, 28, 0.78); color: var(--on-night);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+}
+
+/* ---------- degrees ---------- */
+.degrees { display: grid; gap: clamp(32px, 4vw, 56px); padding-block: 24px; }
+.degree { display: grid; gap: 8px; padding-top: 22px; border-top: 1px solid var(--rule-night); }
+.degree__date { color: var(--on-night); }
+.degree__name { font-size: var(--t-h3); font-weight: 800; font-stretch: 108%; letter-spacing: -0.035em; line-height: 1.04; max-width: 18ch; }
+.degree__school { font-size: clamp(1.0625rem, 1.3vw, 1.25rem); font-weight: 600; }
+.degree__place { color: var(--on-night-2); }
+
+@media (max-width: 860px) {
+  .education__panel { grid-template-columns: minmax(0, 1fr); padding: 14px 14px clamp(28px, 6vw, 44px); }
+  .degrees { padding-inline: 10px; }
+}

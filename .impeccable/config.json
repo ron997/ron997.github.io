@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          ".impeccable/previews/retrieval.html"
+        ],
+        "createdAt": "2026-10-08T14:03:54.870Z",
+        "reason": "agent: unchosen decision-round preview (option C), git-ignored throwaway, never shipped"
+      }
+    ]
+  }
+}

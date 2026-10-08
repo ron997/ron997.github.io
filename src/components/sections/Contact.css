@@ -1,0 +1,38 @@
+.contact__panel {
+  display: grid;
+  gap: clamp(36px, 4.4vw, 64px);
+  padding-block: clamp(48px, 7vw, 112px);
+}
+.contact__lead {
+  font-size: clamp(1.5rem, 2.7vw, 2.625rem);
+  font-weight: 600;
+  letter-spacing: -0.028em;
+  line-height: 1.15;
+  max-width: 26ch;
+}
+.contact__email-box { min-width: 0; }
+.contact__email {
+  display: block;
+  --fit-ratio: 11.6;
+  width: max-content;
+  font-weight: 850;
+  font-stretch: 104%;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+  /* em-only padding, so the measured ratio scales exactly; the bracket's clearance
+     comes from the detection box reaching past the text (Contact.tsx) */
+  padding: 0 0.07em 0.04em 0.02em;
+  text-decoration: underline;
+  text-decoration-thickness: 0.045em;
+  text-underline-offset: 0.12em;
+  text-decoration-color: transparent;
+  transition: text-decoration-color .3s var(--ease-house);
+}
+@media (hover: hover) { .contact__email:hover { text-decoration-color: var(--ink); } }
+.contact__actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+/* annotations on the yellow ground are drawn in ink */
+.panel--signal .det__box { color: var(--ink); }
+.panel--signal .det__chip span { color: var(--signal); }
+.panel--signal ::selection { background: var(--ink); color: var(--signal); }
+.panel--signal :focus-visible { outline-color: var(--ink); }

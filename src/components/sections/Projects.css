@@ -1,0 +1,35 @@
+.projects__panel { padding-block: clamp(12px, 2vw, 28px); }
+
+.project {
+  display: grid;
+  grid-template-columns: minmax(12rem, 4fr) minmax(0, 8fr);
+  gap: 14px clamp(24px, 4vw, 72px);
+  padding-block: clamp(28px, 3.4vw, 48px);
+}
+.project + .project { border-top: 1px solid var(--rule); }
+
+.project__key { display: flex; flex-direction: column; gap: 8px; }
+.project__name {
+  font-size: var(--t-h3);
+  font-weight: 800;
+  font-stretch: 108%;
+  letter-spacing: -0.035em;
+  line-height: 1;
+}
+.project__src { color: var(--ink-3); }
+
+.project__value { display: grid; gap: 14px; align-content: start; padding-top: 0.2em; }
+.project__text { font-size: clamp(1.125rem, 1.45vw, 1.375rem); line-height: 1.45; max-width: 44ch; }
+.project__stack { display: flex; flex-wrap: wrap; }
+.project__stack li {
+  font-size: clamp(1.0625rem, 1.3vw, 1.25rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+.project__stack li:not(:last-child)::after { content: "/"; margin: 0 0.4em; color: var(--rule); font-weight: 400; }
+
+@media (max-width: 760px) {
+  .project { grid-template-columns: minmax(0, 1fr); }
+}

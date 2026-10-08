@@ -1,0 +1,65 @@
+/* Design tokens. One world: Curvedpixel's grammar (heavy display type, rounded
+   light and dark panels, pill buttons, B/W photography resolving to colour,
+   one accent) re-keyed for a resume being read by a layout model. */
+
+:root {
+  /* surfaces */
+  --canvas: #F1F2EF;
+  --panel: #E4E6E2;
+  --paper: #FAFAF8;
+  --night: #14171C;
+  --night-2: #1D2127;
+  --night-3: #2A2F36;
+
+  /* ink */
+  --ink: #14171C;
+  --ink-2: #4C5159;
+  --ink-3: #62676F;
+  --on-night: #EEEFEC;
+  --on-night-2: #A3A8AF;
+
+  /* the one accent: annotation yellow. Boxes, highlights, the primary action. */
+  --signal: #FFD21F;
+  --signal-ink: #14171C;
+
+  /* rules */
+  --rule: #CDD0CB;
+  --rule-night: #343940;
+
+  /* type */
+  --display: "Archivo Variable", "Archivo", system-ui, sans-serif;
+  --mono: "Fragment Mono", ui-monospace, "Cascadia Mono", "SFMono-Regular", monospace;
+  --t-name: clamp(3.75rem, 9.6vw, 9.5rem);
+  --t-giant-max: 13rem;
+  --t-h3: clamp(1.75rem, 2.6vw, 2.75rem);
+  --t-lead: clamp(1.75rem, 3.35vw, 3.35rem);
+  --t-big: clamp(1.25rem, 1.9vw, 1.875rem);
+  --t-body: clamp(1rem, 1.05vw, 1.125rem);
+  --t-small: 0.875rem;
+  --t-mono: 0.8125rem;
+
+  /* space: one rhythm, on 8 */
+  --gutter: clamp(12px, 1.6vw, 24px);
+  --inset: clamp(20px, 4vw, 64px);
+  --section-y: clamp(64px, 8vw, 112px);
+  --gap-tight: 32px;
+  --gap-block: clamp(48px, 5.6vw, 88px);
+  --container: 1600px;
+  --nav-h: 76px;
+
+  /* form */
+  --r-panel: clamp(28px, 3vw, 44px);
+  --r-card: clamp(20px, 2vw, 28px);
+  --r-inner: 18px;
+  --shadow-card: 0 18px 44px rgba(20, 23, 28, 0.10), 0 2px 6px rgba(20, 23, 28, 0.05);
+  --shadow-page: 0 34px 80px rgba(0, 0, 0, 0.5), 0 2px 0 rgba(255, 255, 255, 0.05);
+
+  /* motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-house: cubic-bezier(0.44, 0, 0.56, 1);
+  --ease-hover: cubic-bezier(0.4, 0.23, 0.07, 1.01);
+}
+
+@media (max-width: 760px) {
+  :root { --nav-h: 64px; }
+}
