@@ -135,7 +135,7 @@ export function Hero() {
           <span className="field__k mono" aria-hidden="true">title</span>
           <div className="hero__name-box fit-box">
             <h1 ref={nameRef} id="hero-name" className="hero__name fit">
-              <span ref={firstLineRef}>{person.first}</span>
+              <span ref={firstLineRef}>{person.first}</span>{' '}
               <span>{person.last}</span>
             </h1>
           </div>
