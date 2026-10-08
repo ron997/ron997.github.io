@@ -19,10 +19,10 @@
 .project__src { color: var(--ink-3); }
 
 .project__value { display: grid; gap: 14px; align-content: start; padding-top: 0.2em; }
-.project__text { font-size: clamp(1.125rem, 1.45vw, 1.375rem); line-height: 1.45; max-width: 44ch; }
+.project__text { font-size: var(--t-lede); line-height: 1.45; max-width: 44ch; }
 .project__stack { display: flex; flex-wrap: wrap; }
 .project__stack li {
-  font-size: clamp(1.0625rem, 1.3vw, 1.25rem);
+  font-size: var(--t-title);
   font-weight: 600;
   letter-spacing: -0.02em;
   color: var(--ink-2);

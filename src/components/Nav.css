@@ -21,7 +21,7 @@
 .nav__brand { display: inline-flex; align-items: center; gap: 12px; font-weight: 700; font-size: 1.0625rem; letter-spacing: -0.01em; justify-self: start; }
 .nav__mark {
   position: relative; width: 38px; height: 38px; display: grid; place-items: center;
-  font-weight: 850; font-stretch: 112%; font-size: 0.875rem; letter-spacing: -0.02em;
+  font-weight: 850; font-stretch: 112%; font-size: var(--t-small); letter-spacing: -0.02em;
   --c: var(--ink); --b: 2px; --l: 9px;
   background:
     linear-gradient(var(--c), var(--c)) top left / var(--l) var(--b),
@@ -37,7 +37,7 @@
 }
 @media (hover: hover) { .nav__brand:hover .nav__mark { --c: var(--ink-3); } }
 
-.nav__links { display: flex; gap: clamp(18px, 2.4vw, 36px); font-weight: 500; font-size: 0.9375rem; }
+.nav__links { display: flex; gap: clamp(18px, 2.4vw, 36px); font-weight: 500; font-size: var(--t-ui); }
 .nav__links a { position: relative; padding: 6px 0; }
 .nav__links a::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--ink);
@@ -63,7 +63,7 @@
   }
   .nav__sheet nav { display: flex; flex-direction: column; }
   .nav__sheet nav a {
-    font-size: clamp(2.5rem, 11vw, 4rem); font-weight: 850; font-stretch: 112%; letter-spacing: -0.04em; line-height: 1.08;
+    font-size: var(--t-menu); font-weight: 850; font-stretch: 112%; letter-spacing: -0.04em; line-height: 1.08;
     padding: 6px 0; border-bottom: 1px solid var(--rule);
   }
   .nav__sheet-cta { display: flex; flex-wrap: wrap; gap: 12px; }

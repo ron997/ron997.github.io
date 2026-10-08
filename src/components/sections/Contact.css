@@ -4,7 +4,7 @@
   padding-block: clamp(48px, 7vw, 112px);
 }
 .contact__lead {
-  font-size: clamp(1.5rem, 2.7vw, 2.625rem);
+  font-size: var(--t-big);
   font-weight: 600;
   letter-spacing: -0.028em;
   line-height: 1.15;

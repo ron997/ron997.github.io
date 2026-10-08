@@ -29,13 +29,16 @@
   /* type */
   --display: "Archivo Variable", "Archivo", system-ui, sans-serif;
   --mono: "Fragment Mono", ui-monospace, "Cascadia Mono", "SFMono-Regular", monospace;
-  --t-name: clamp(3.75rem, 9.6vw, 9.5rem);
-  --t-giant-max: 13rem;
-  --t-h3: clamp(1.75rem, 2.6vw, 2.75rem);
-  --t-lead: clamp(1.75rem, 3.35vw, 3.35rem);
-  --t-big: clamp(1.25rem, 1.9vw, 1.875rem);
+  /* one ramp; display type is fitted to its container (see .fit) */
+  --t-menu: clamp(2.5rem, 11vw, 4rem);          /* phone menu links */
+  --t-lead: clamp(1.75rem, 3.35vw, 3.35rem);    /* the summary */
+  --t-h3: clamp(1.75rem, 2.6vw, 2.75rem);       /* organisations, projects, degrees */
+  --t-big: clamp(1.5rem, 2.6vw, 2.5rem);        /* skill values, ledger figures, contact lead */
+  --t-lede: clamp(1.125rem, 1.45vw, 1.375rem);  /* hero summary, project sentences */
+  --t-title: clamp(1.0625rem, 1.3vw, 1.25rem);  /* role titles, bullets, schools, facts */
   --t-body: clamp(1rem, 1.05vw, 1.125rem);
-  --t-small: 0.875rem;
+  --t-ui: 0.9375rem;                            /* nav links, small pills */
+  --t-small: 0.875rem;                          /* chips, nav monogram */
   --t-mono: 0.8125rem;
 
   /* space: one rhythm, on 8 */

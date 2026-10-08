@@ -8,12 +8,12 @@
 }
 .skills__row:last-child { border-bottom: 1px solid var(--rule); }
 .skills__row dt { display: flex; flex-direction: column; gap: 6px; padding-top: 0.35em; }
-.skills__key { font-size: clamp(1.0625rem, 1.25vw, 1.25rem); font-weight: 700; letter-spacing: -0.01em; }
+.skills__key { font-size: var(--t-title); font-weight: 700; letter-spacing: -0.01em; }
 .skills__line { color: var(--ink-3); }
 
 .skills__values { display: flex; flex-wrap: wrap; gap: 0.1em 0; }
 .skills__values li {
-  font-size: clamp(1.5rem, 2.55vw, 2.5rem);
+  font-size: var(--t-big);
   font-weight: 600;
   letter-spacing: -0.03em;
   line-height: 1.22;

@@ -109,7 +109,7 @@ p { text-wrap: pretty; }
 .pill--signal { background: var(--signal); color: var(--signal-ink); }
 .pill--ink { background: var(--ink); color: var(--on-night); }
 .pill--ghost { box-shadow: inset 0 0 0 1.5px currentColor; }
-.pill--sm { height: 44px; padding: 0 16px 0 20px; font-size: 0.9375rem; }
+.pill--sm { height: 44px; padding: 0 16px 0 20px; font-size: var(--t-ui); }
 @media (hover: hover) {
   .on-light .pill--signal:hover { background: var(--ink); color: var(--on-night); }
   .on-night .pill--signal:hover { background: var(--on-night); color: var(--ink); }
@@ -122,7 +122,7 @@ p { text-wrap: pretty; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip {
   display: inline-flex; align-items: center; height: 34px; padding: 0 13px; border-radius: 999px;
-  font-size: 0.875rem; font-weight: 500; white-space: nowrap;
+  font-size: var(--t-small); font-weight: 500; white-space: nowrap;
   background: var(--night-3); color: var(--on-night);
 }
 .on-light .chip { background: rgba(20, 23, 28, 0.07); color: var(--ink); }

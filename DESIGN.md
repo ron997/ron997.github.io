@@ -55,6 +55,34 @@ typography:
     fontSize: "clamp(1rem, 1.05vw, 1.125rem)"
     fontWeight: 400
     lineHeight: 1.55
+  big:
+    fontFamily: "Archivo Variable, Archivo, system-ui, sans-serif"
+    fontSize: "clamp(1.5rem, 2.6vw, 2.5rem)"
+    fontWeight: 600
+    lineHeight: 1.2
+    letterSpacing: "-0.03em"
+  lede:
+    fontFamily: "Archivo Variable, Archivo, system-ui, sans-serif"
+    fontSize: "clamp(1.125rem, 1.45vw, 1.375rem)"
+    fontWeight: 400
+    lineHeight: 1.45
+  ui:
+    fontFamily: "Archivo Variable, Archivo, system-ui, sans-serif"
+    fontSize: "0.9375rem"
+    fontWeight: 500
+    lineHeight: 1.2
+  small:
+    fontFamily: "Archivo Variable, Archivo, system-ui, sans-serif"
+    fontSize: "0.875rem"
+    fontWeight: 500
+    lineHeight: 1.2
+  menu:
+    fontFamily: "Archivo Variable, Archivo, system-ui, sans-serif"
+    fontSize: "clamp(2.5rem, 11vw, 4rem)"
+    fontWeight: 850
+    lineHeight: 1.08
+    letterSpacing: "-0.04em"
+    fontVariation: "'wdth' 112"
   label:
     fontFamily: "Fragment Mono, ui-monospace, Cascadia Mono, SFMono-Regular, monospace"
     fontSize: "0.8125rem"
@@ -69,7 +97,9 @@ typography:
     lineHeight: 1.3
     letterSpacing: "0"
 rounded:
+  hairline: "2px"
   bracket: "3px"
+  focus: "4px"
   inner: "18px"
   card: "clamp(20px, 2vw, 28px)"
   panel: "clamp(28px, 3vw, 44px)"
@@ -196,9 +226,13 @@ The palette is cool neutral greys and a near-black "night", plus one saturated a
 - **Display** (850, 112% width, sized to the container, capped at 13rem / 208px, line-height 0.74, -0.045em, uppercase): the giant section words. Only Results, Work experience, Technical skills, Projects and Education use it.
 - **Display Name** (850, 112% width, sized to the container, line-height 0.84): the hero name, two lines. The contact email uses the same fitted treatment at 104% width.
 - **Headline** (800, 108% width, clamp(1.75rem, 2.6vw, 2.75rem), line-height 1, -0.035em): role organisations, project names and degree names.
-- **Lead** (600, clamp(1.75rem, 3.35vw, 3.35rem), line-height 1.14, -0.028em): the summary paragraph, revealed word by word. The contact lead uses a smaller step of the same voice.
-- **Title** (600, clamp(1.0625rem, 1.3vw, 1.25rem)): role titles, schools, project stack items, ledger result text.
-- **Body** (400, clamp(1rem, 1.05vw, 1.125rem), line-height 1.55): running text and bullets, kept to about 70ch.
+- **Lead** (600, clamp(1.75rem, 3.35vw, 3.35rem), line-height 1.14, -0.028em): the summary paragraph, revealed word by word.
+- **Big** (600, clamp(1.5rem, 2.6vw, 2.5rem), -0.03em): skill values, ledger figures (800, tabular) and the contact lead.
+- **Lede** (400, clamp(1.125rem, 1.45vw, 1.375rem), line-height 1.45): the hero summary and project sentences.
+- **Title** (clamp(1.0625rem, 1.3vw, 1.25rem)): role titles, schools, project stack items and ledger result text at 600; role bullets and the summary facts at 400.
+- **Body** (400, clamp(1rem, 1.05vw, 1.125rem), line-height 1.55): running text, kept to about 70ch.
+- **UI** (500, 0.9375rem) and **Small** (500, 0.875rem): nav links and small pills; chips and the nav monogram.
+- **Menu** (850, 112% width, clamp(2.5rem, 11vw, 4rem)): the phone menu's section links only.
 - **Label** (Fragment Mono 400, 0.8125rem, line-height 1.4, tracking 0, tabular figures): field keys, table headers, sources, meta, footer note. It is set in lowercase or as written, never letterspaced uppercase.
 
 ### Named Rules
@@ -235,7 +269,7 @@ Depth comes mostly from tone. Panels are flat, and contrast between canvas, ligh
 
 ## Shapes
 
-There are two corner languages, and they do not mix. Containers are soft: panels use 28–44px, cards and the portrait 20–28px, pills and chips are fully round. The annotation layer is sharp: boxes are 1.5px lines with 16px corner brackets (4px thick, set 2px outside the box), and class chips are 3px tabs with the corner nearest the box squared off. Lists use the same corner bracket in place of a bullet: role bullets are a 10px top-left bracket in Ink. The nav monogram is framed by four 9px corner brackets.
+There are two corner languages, and they do not mix. Containers are soft: panels use 28–44px, cards and the portrait 20–28px, pills and chips are fully round. The annotation layer is sharp: boxes are 1.5px lines with 16px corner brackets (4px thick, set 2px outside the box), and class chips are 3px tabs with the corner nearest the box squared off. Highlights (`mark`), parse boxes and their label tabs round at a 2px hairline radius, and focus rings at 4px. Lists use the same corner bracket in place of a bullet: role bullets are a 10px top-left bracket in Ink. The nav monogram is framed by four 9px corner brackets.
 
 ## Components
 

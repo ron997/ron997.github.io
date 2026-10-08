@@ -11,6 +11,87 @@
         ],
         "createdAt": "2026-10-08T14:03:54.870Z",
         "reason": "agent: unchosen decision-round preview (option C), git-ignored throwaway, never shipped"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "100px",
+        "files": [
+          "src/styles/base.css"
+        ],
+        "createdAt": "2026-10-08T14:22:30.225Z",
+        "reason": "agent: measuring constant for container-fit type (.fit[data-measuring]), not a type step; documented in DESIGN.md Container-Fit Rule"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "*",
+        "files": [
+          ".impeccable/previews/world.css"
+        ],
+        "createdAt": "2026-10-08T14:22:30.305Z",
+        "reason": "agent: git-ignored direction-round preview written before DESIGN.md existed; never shipped"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "*",
+        "files": [
+          ".impeccable/previews/world.css"
+        ],
+        "createdAt": "2026-10-08T14:22:30.369Z",
+        "reason": "agent: git-ignored direction-round preview written before DESIGN.md existed; never shipped"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "*",
+        "files": [
+          ".impeccable/previews/inference.html"
+        ],
+        "createdAt": "2026-10-08T14:22:30.459Z",
+        "reason": "agent: git-ignored direction-round preview written before DESIGN.md existed; never shipped"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "*",
+        "files": [
+          ".impeccable/previews/inference.html"
+        ],
+        "createdAt": "2026-10-08T14:22:30.538Z",
+        "reason": "agent: git-ignored direction-round preview written before DESIGN.md existed; never shipped"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "*",
+        "files": [
+          ".impeccable/previews/parsed.html"
+        ],
+        "createdAt": "2026-10-08T14:22:30.613Z",
+        "reason": "agent: git-ignored direction-round preview written before DESIGN.md existed; never shipped"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "*",
+        "files": [
+          ".impeccable/previews/parsed.html"
+        ],
+        "createdAt": "2026-10-08T14:22:30.697Z",
+        "reason": "agent: git-ignored direction-round preview written before DESIGN.md existed; never shipped"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "*",
+        "files": [
+          ".impeccable/previews/retrieval.html"
+        ],
+        "createdAt": "2026-10-08T14:22:30.790Z",
+        "reason": "agent: git-ignored direction-round preview written before DESIGN.md existed; never shipped"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "*",
+        "files": [
+          ".impeccable/previews/retrieval.html"
+        ],
+        "createdAt": "2026-10-08T14:22:30.854Z",
+        "reason": "agent: git-ignored direction-round preview written before DESIGN.md existed; never shipped"
       }
     ]
   }

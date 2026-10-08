@@ -17,7 +17,7 @@
 
 .ledger__fig {
   width: 9.5rem;
-  font-size: clamp(1.75rem, 2.6vw, 2.5rem);
+  font-size: var(--t-big);
   font-weight: 800;
   font-stretch: 108%;
   letter-spacing: -0.04em;
@@ -25,7 +25,7 @@
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
-.ledger__what { font-size: clamp(1.0625rem, 1.3vw, 1.25rem); line-height: 1.4; max-width: 40ch; }
+.ledger__what { font-size: var(--t-title); line-height: 1.4; max-width: 40ch; }
 .ledger__how { width: 17rem; color: var(--on-night); }
 .ledger__src { width: 20rem; color: var(--on-night-2); }
 

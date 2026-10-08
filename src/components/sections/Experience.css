@@ -29,7 +29,7 @@
   letter-spacing: -0.035em;
   line-height: 1;
 }
-.role__title { margin-top: 10px; font-size: clamp(1.0625rem, 1.3vw, 1.25rem); font-weight: 600; color: var(--ink-2); }
+.role__title { margin-top: 10px; font-size: var(--t-title); font-weight: 600; color: var(--ink-2); }
 .role__meta { display: grid; gap: 6px; }
 .role__meta div { display: grid; grid-template-columns: 4.5rem 1fr; gap: 12px; }
 .role__meta dt { color: var(--ink-3); }
@@ -39,7 +39,7 @@
 .role__bullets li {
   position: relative;
   padding-left: 26px;
-  font-size: clamp(1.0313rem, 1.18vw, 1.1875rem);
+  font-size: var(--t-title);
   line-height: 1.55;
 }
 .role__bullets li::before {
