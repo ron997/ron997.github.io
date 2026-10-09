@@ -112,7 +112,7 @@ export function Hero() {
                 className="lbox lbox--redact"
                 style={{ left: pct(r.bbox[0]), top: pct(r.bbox[1]), width: pct(r.bbox[2] - r.bbox[0]), height: pct(r.bbox[3] - r.bbox[1]) } as CSSProperties}
               >
-                <b>{r.cls} · redacted</b>
+                <b>{r.cls.split('.')[0]} · redacted</b>
               </span>
             ))}
           </div>

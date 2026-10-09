@@ -1,5 +1,5 @@
 .hero {
-  --hero-h: clamp(640px, calc(100svh - var(--nav-h) - var(--gutter)), 1000px);
+  --hero-h: clamp(480px, calc(100svh - var(--nav-h) - var(--gutter)), 1000px);
   --pad-y: clamp(24px, 2.8vw, 44px);
   position: relative;
   width: min(100% - 2 * var(--gutter), var(--container));
@@ -27,6 +27,7 @@
   border-radius: 3px;
   background: var(--paper);
   box-shadow: var(--shadow-page);
+  container-type: inline-size; /* labels scale with the sheet */
 }
 .hero__page img { width: 100%; height: 100%; border-radius: 3px; }
 .hero__boxes { position: absolute; inset: 0; }
@@ -43,32 +44,43 @@
 .lbox.is-hover { background: rgba(255, 210, 31, 0.42); }
 .lbox b {
   position: absolute; left: -1.5px; bottom: 100%;
-  font: 400 9px/1 var(--mono); letter-spacing: 0;
+  /* 9px on a full-size sheet, down to 7.5px on a small laptop's smaller sheet,
+     so tags keep their place relative to the text they label */
+  font: 400 clamp(7.5px, 2.4cqi, 9px)/1 var(--mono); letter-spacing: 0;
   background: var(--signal); color: var(--signal-ink);
   padding: 2px 4px 2px 3px; border-radius: 2px 2px 0 0; white-space: nowrap;
   pointer-events: none;
 }
-/* Labels are placed by class so none ever covers the text it classifies:
-   the title keeps its label above (top margin of the page), section headers and
-   the contact line get theirs on the empty right end of the same line, and the
-   redaction label sits in the clear space above the bar, left of the title.
+/* Labels are placed by class so none ever covers the text it classifies, at any
+   page size (the labels stay 9px while the page shrinks on small laptops):
+   the title keeps its label above, in the page's top margin; section headers get
+   theirs on the empty right end of their own line; the contact label hangs below
+   the right end of its line, off the wire; the redaction label grows leftwards
+   from the bar into the empty margin, away from the centred title.
    Everything else shows its label only while hovered. */
 .lbox[data-cls]:not([data-cls="title"]):not([data-cls="contact"]):not([data-cls="section-header"]) b { display: none; }
-.lbox[data-cls="section-header"] b,
-.lbox[data-cls="contact"] b { left: calc(100% + 4px); bottom: auto; top: -1.5px; border-radius: 2px; }
+.lbox[data-cls="section-header"] b { left: calc(100% + 4px); bottom: auto; top: -1.5px; border-radius: 2px; }
+.lbox[data-cls="contact"] b { left: auto; right: -1.5px; bottom: auto; top: 100%; border-radius: 0 0 2px 2px; }
 .lbox.is-hover b { display: block !important; z-index: 2; }
 .lbox--redact { cursor: default; z-index: 1; }
-.lbox--redact b { display: block; }
+.lbox--redact b { display: block; left: auto; right: -1.5px; }
 
 .hero__inspector {
   width: 100%;
   max-width: 34rem;
-  min-height: 1.4em;
+  /* This readout changes with every hovered box, so it must never size the
+     column: its text width used to widen the column on hover, which shrank the
+     name and slid the resume under the cursor (the "bounce"). contain keeps it
+     out of the sizing; the fixed two-line height means a longer readout never
+     moves anything vertically either. */
+  contain: inline-size;
+  height: 2.8em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   text-align: center;
   color: var(--on-night-2);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .hero__inspector .hl { color: var(--signal); }
 
@@ -115,6 +127,15 @@
   @keyframes page-in { from { opacity: 0; transform: rotate(-4deg) translateY(28px); } }
 }
 
+/* ---------- short laptop screens (14-inch at 125-150% scaling) ----------
+   Both columns start at the top, and the actions move above the skills (the
+   phone order), so the name, summary and Email / Resume fit the first screen. */
+@media (min-width: 1024px) and (max-height: 820px) {
+  .hero { align-items: start; }
+  .field--contact { order: 3; }
+  .field--skills { order: 4; }
+}
+
 /* ---------- single column: the fields lead, the page follows ---------- */
 @media (max-width: 1023px) {
   .hero { grid-template-columns: minmax(0, 1fr); min-height: 0; gap: 28px; padding: clamp(28px, 6vw, 48px) clamp(20px, 5vw, 44px); }
@@ -130,5 +151,5 @@
 @media (max-width: 639px) {
   .field { grid-template-columns: minmax(0, 1fr); }
   .field__k { display: none; }
-  .hero__inspector { white-space: normal; font-size: 0.75rem; }
+  .hero__inspector { font-size: 0.75rem; }
 }
