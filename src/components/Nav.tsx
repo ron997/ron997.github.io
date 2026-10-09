@@ -23,6 +23,15 @@ export function Nav() {
     return () => window.removeEventListener('scroll', on)
   }, [])
 
+  // The menu exists only in the compact layout: close it when the screen widens
+  // past it (a rotated phone), or the hidden menu would keep the page scroll-locked.
+  useEffect(() => {
+    const compact = window.matchMedia('(max-width: 900px)')
+    const onChange = () => { if (!compact.matches) setOpen(false) }
+    compact.addEventListener('change', onChange)
+    return () => compact.removeEventListener('change', onChange)
+  }, [])
+
   useEffect(() => {
     if (!open) return
     const close = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false)

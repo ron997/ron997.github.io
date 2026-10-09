@@ -68,8 +68,10 @@
   .nav__toggle { display: grid; }
   .nav__brand > span:last-child { font-size: 1rem; }
   .nav__sheet:not([hidden]) {
-    display: flex; flex-direction: column; justify-content: space-between;
+    display: flex; flex-direction: column; justify-content: space-between; gap: 32px;
     position: fixed; inset: var(--nav-h) 0 0 0; padding: 24px var(--inset) 32px; background: var(--canvas);
+    /* the page behind is scroll-locked, so on short screens the menu scrolls itself */
+    overflow-y: auto; overscroll-behavior: contain;
   }
   .nav__sheet nav { display: flex; flex-direction: column; }
   .nav__sheet nav a {
