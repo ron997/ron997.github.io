@@ -1,5 +1,5 @@
 import { motion, useReducedMotion, useScroll, useTransform } from 'motion/react'
-import { createRef, useMemo, type ReactNode, type RefObject } from 'react'
+import { createRef, useEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from 'react'
 import { experience, type Bullet, type Role } from '../../content/resume'
 import { useMediaQuery } from '../../lib/hooks'
 import { orderOf } from '../../lib/layout'
@@ -46,16 +46,46 @@ function renderBullet(b: Bullet): ReactNode[] {
   return out
 }
 
+/**
+ * Whether every card can be read in full below its sticky offset. Card heights
+ * depend on the width and the content, so this is measured rather than assumed
+ * from a viewport height: a card taller than the space under its offset would
+ * have its last lines covered by the next card before they could be seen.
+ */
+function useStackFits(ref: RefObject<HTMLDivElement | null>) {
+  const [fits, setFits] = useState(false)
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const check = () => {
+      const navH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 76
+      const cards = [...el.querySelectorAll<HTMLElement>('.role')]
+      setFits(cards.length > 0 && cards.every((c, i) => navH + 24 + i * 20 + c.offsetHeight <= window.innerHeight - 8))
+    }
+    const ro = new ResizeObserver(check) // also fires once on observe
+    ro.observe(el)
+    window.addEventListener('resize', check)
+    return () => {
+      ro.disconnect()
+      window.removeEventListener('resize', check)
+    }
+  }, [ref])
+  return fits
+}
+
 export function Experience() {
   const refs = useMemo(() => CARDS.map(() => createRef<HTMLDivElement>()), [])
-  const stacked = useMediaQuery('(min-width: 1024px) and (min-height: 700px)')
+  const stackRef = useRef<HTMLDivElement>(null)
+  const wide = useMediaQuery('(min-width: 1024px)')
+  const fits = useStackFits(stackRef)
+  const stacked = wide && fits
 
   return (
     <section className="section experience" id="experience" aria-labelledby="experience-h">
       <Giant id="experience-h" text="Work experience" label={`section-header · ${orderOf('WORK EXPERIENCE')}`} />
       <div className="container">
         <div className="panel panel--light on-light experience__panel">
-          <div className={`stack${stacked ? ' is-stacked' : ''}`}>
+          <div ref={stackRef} className={`stack${stacked ? ' is-stacked' : ''}`}>
             {CARDS.map((c, i) => (
               <RoleCard key={c.role.id} card={c} index={i} cardRef={refs[i]} nextRef={refs[i + 1]} stacked={stacked} />
             ))}
