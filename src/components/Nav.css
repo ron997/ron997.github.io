@@ -1,14 +1,24 @@
 .nav {
   position: sticky; top: 0; z-index: 50;
-  transition: background-color .35s var(--ease-house), box-shadow .35s var(--ease-house), backdrop-filter .35s;
 }
-.nav.is-solid {
+/* The bar's fill and blur live on this layer, never on .nav itself: a
+   backdrop-filter on .nav makes it the containing block for the fixed menu
+   sheet inside it, which then shrinks to the bar's height and leaves its links
+   floating over the page (what Safari did). Write only the standard property:
+   the CSS minifier adds -webkit- for Safari, and a hand-written prefixed copy
+   made it drop the standard one, leaving Chrome with no blur at all. */
+.nav::before {
+  content: "";
+  position: absolute; inset: 0; z-index: -1;
+  pointer-events: none;
+  transition: background-color .35s var(--ease-house), box-shadow .35s var(--ease-house);
+}
+.nav.is-solid::before {
   background: rgba(241, 242, 239, 0.86);
   backdrop-filter: saturate(1.4) blur(14px);
-  -webkit-backdrop-filter: saturate(1.4) blur(14px);
   box-shadow: 0 1px 0 rgba(20, 23, 28, 0.06);
 }
-.nav.is-open { background: var(--canvas); }
+.nav.is-open::before { background: var(--canvas); backdrop-filter: none; box-shadow: none; }
 
 .nav__bar {
   height: var(--nav-h);
